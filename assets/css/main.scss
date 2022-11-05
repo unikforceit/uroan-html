@@ -1,0 +1,14 @@
+@import 'scss/fonts';
+@import 'scss/variables';
+body{
+    font-family: $primanry_font;
+    color: $paragraph_color;
+    line-height: 1.56;
+}
+h1, h2, h3, h4, h5, h6{
+    color: $primary_black;
+    line-height: 1.2;
+}
+.container{
+    max-width: 1320px;
+}
