@@ -2,15 +2,230 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 body {
   font-family: "Prompt", serif;
-  color: #74787C;
+  color: #74787c;
   line-height: 1.56;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #121111;
   line-height: 1.2;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
 }
 
 .container {
   max-width: 1320px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.default-header-section {
+  background-color: #121111;
+}
+.default-header-section .container {
+  max-width: 1680px;
+}
+
+.top-header {
+  border-bottom: 1px solid #3d3d3d;
+  padding: 10px 0;
+}
+.top-header .header-quick-links ul {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.top-header .header-quick-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.top-header .header-quick-links ul li a:hover {
+  color: #f36a07;
+}
+.top-header .drop-manu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+.top-header .drop-manu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.bottom-header {
+  padding: 38px 0;
+}
+.bottom-header .main-manu ul {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.bottom-header .main-manu ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+.bottom-header .main-manu ul li a:hover {
+  color: #f36a07;
+}
+
+.header-right {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.header-right .right-elements span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.breadcrumb {
+  background-image: url(/assets//img/bgimg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.blog-section {
+  padding-top: 60px;
+}
+.blog-section .blog-grid {
+  position: relative;
+  margin-bottom: 60px;
+}
+.blog-section .blog-grid .box-img .blog-date {
+  position: absolute;
+  background-color: #121111;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  left: 0;
+  top: 0;
+}
+.blog-section .blog-grid .blog-cate {
+  padding-top: 30px;
+}
+.blog-section .blog-grid .blog-cate a {
+  text-decoration: none;
+}
+.blog-section .blog-grid .blog-cate a:hover {
+  color: #f36a07;
+}
+.blog-section .blog-grid .heading-text {
+  padding-top: 10px;
+}
+.blog-section .blog-grid .heading-text a {
+  text-decoration: none;
+}
+.blog-section .blog-grid .heading-text a:hover {
+  color: #f36a07;
+}
+.blog-section .blog-grid .blog-paragraph {
+  padding: 15px 0;
+}
+.blog-section .blog-grid .blog-paragraph p {
+  padding: 0;
+  margin: 0;
+}
+.blog-section .blog-grid .blog-link a {
+  color: #121111;
+  font-weight: 400;
+  font-size: 14px;
+}
+.blog-section .blog-grid .blog-link a:hover {
+  color: #f36a07;
+}
+
+.pagination-wrapper {
+  margin-bottom: 120px;
+}
+.pagination-wrapper .pagination {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.pagination-wrapper .pagination .page-item a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #F6F6F6;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #121111;
+}
+.pagination-wrapper .pagination .page-item a:hover {
+  color: #ffffff;
+  background-color: #121111;
+}
+
+.newsletter-wraper {
+  text-align: center;
+}
+.newsletter-wraper h6 {
+  color: #f36a07;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: primary_font;
+}
+.newsletter-wraper h3 {
+  color: #121111;
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding-top: 30px;
+}
+.newsletter-wraper input {
+  width: 696px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.newsletter-wraper .privacy-policy {
+  padding-top: 30px;
+}
+.newsletter-wraper .privacy-policy span {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Prompt", serif;
+}
+.newsletter-wraper .privacy-policy a {
+  color: #121111;
+}
+.newsletter-wraper .main-footer {
+  padding-top: 120px;
+  background-color: #F6F6F6;
+}
+.newsletter-wraper .main-footer .footer-logo p {
+  width: 320px;
+  padding-top: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Prompt", serif;
+  color: #74787c;
+}
+.newsletter-wraper .main-footer .footer-heading {
+  font-size: 20px;
+}
