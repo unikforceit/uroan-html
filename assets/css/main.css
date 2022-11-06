@@ -5,6 +5,8 @@ body {
   color: #74787c;
   line-height: 1.56;
   overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 h1,
@@ -32,6 +34,28 @@ a {
 
 .container {
   max-width: 1320px;
+}
+
+.uroan-btn {
+  width: 160px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #121111;
+}
+
+.sub-heading {
+  color: #f36a07;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: primary_font;
+}
+
+.heading {
+  color: #121111;
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding-top: 30px;
 }
 
 .default-header-section {
@@ -77,6 +101,7 @@ a {
   display: flex;
   -moz-column-gap: 50px;
        column-gap: 50px;
+  justify-content: center;
 }
 .bottom-header .main-manu ul li a {
   text-decoration: none;
@@ -181,51 +206,193 @@ a {
   background-color: #121111;
 }
 
-.newsletter-wraper {
-  text-align: center;
+.blog-details {
+  padding: 60px 0 120px;
 }
-.newsletter-wraper h6 {
-  color: #f36a07;
+.blog-details .post-meta {
+  padding-top: 50px;
+}
+.blog-details .blog-heading {
+  padding-top: 15px;
+}
+.blog-details .blog-heading h2 {
+  font-size: 36px;
+}
+.blog-details .blog-description {
+  margin-top: 30px;
+}
+.blog-details .blog-description .para-spacing {
+  margin-top: 50px;
+}
+.blog-details .blog-description .blog-paragraph p {
   font-weight: 300;
-  font-size: 14px;
-  font-family: primary_font;
 }
-.newsletter-wraper h3 {
-  color: #121111;
-  font-family: "Italiana", serif;
-  font-weight: 400;
-  font-size: 40px;
-  padding-top: 30px;
+.blog-details .blog-description .blog-sub-heading h3 {
+  font-size: 24px;
+  margin-top: 30px;
 }
-.newsletter-wraper input {
-  width: 696px;
-  height: 60px;
-  margin: 0 auto;
+.blog-details .blog-description .blog-images {
   margin-top: 60px;
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
-.newsletter-wraper .privacy-policy {
+.blog-details .blog-description .bottom-paragraph {
+  margin-top: 35px;
+}
+.blog-details .blog-description .social-tag {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 60px;
+}
+.blog-details .blog-description .button-tags span {
+  font-weight: 500;
+  color: #121111;
+}
+.blog-details .blog-description .button-tags ul {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.blog-details .blog-description .button-tags ul span {
+  padding-top: 7px;
+}
+.blog-details .blog-description .button-tags ul li a {
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  padding: 7px 9px;
+}
+.blog-details .blog-description .button-tags ul li a:hover {
+  color: #ffffff;
+  background-color: #121111;
+}
+.blog-details .blog-description .social-share span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #121111;
+}
+.blog-details .blog-description .social-share ul {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.blog-details .blog-description .author {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.blog-details .blog-description .author h3 {
+  margin-bottom: 40px;
+}
+.blog-details .blog-description .author .author-box {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.blog-details .blog-description .author .author-box .author-text h4 {
+  font-size: 24px;
+}
+.blog-details .blog-description .author .author-box .author-text p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.blog-details .blog-description .author .author-box .author-text .author-social-icon {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.main-footer {
+  padding: 120px 0 40px;
+  background-color: #F6F6F6;
+}
+.main-footer .newsletter-wraper {
+  text-align: center;
+  max-width: 696px;
+  margin: 0 auto 120px;
+}
+.main-footer .newsletter-wraper .newsletter-form {
+  margin-top: 60px;
+  position: relative;
+}
+.main-footer .newsletter-wraper .newsletter-form input {
+  height: 60px;
+  padding: 18px 30px;
+  width: 100%;
+  border: 1px solid #dedede;
+  background-color: transparent;
+}
+.main-footer .newsletter-wraper .newsletter-form input:focus {
+  outline: none;
+}
+.main-footer .newsletter-wraper .newsletter-form .uroan-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+.main-footer .newsletter-wraper .privacy-policy {
   padding-top: 30px;
 }
-.newsletter-wraper .privacy-policy span {
+.main-footer .newsletter-wraper .privacy-policy span {
   font-weight: 300;
   font-size: 14px;
   font-family: "Prompt", serif;
 }
-.newsletter-wraper .privacy-policy a {
+.main-footer .newsletter-wraper .privacy-policy a {
   color: #121111;
 }
-.newsletter-wraper .main-footer {
-  padding-top: 120px;
-  background-color: #F6F6F6;
+.main-footer .footer-wrapper {
+  background-color: #ffffff;
+  margin: 0 40px;
+  padding: 40px 0 40px;
 }
-.newsletter-wraper .main-footer .footer-logo p {
+.main-footer .footer-wrapper .footer-widget {
+  padding-bottom: 80px;
+}
+.main-footer .footer-wrapper .footer-widget .footer-about p {
   width: 320px;
-  padding-top: 40px;
+  padding-top: 25px;
   font-weight: 300;
   font-size: 16px;
   font-family: "Prompt", serif;
   color: #74787c;
 }
-.newsletter-wraper .main-footer .footer-heading {
+.main-footer .footer-wrapper .footer-widget .footer-about .social-icon ul {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-top: 10px;
+}
+.main-footer .footer-wrapper .footer-widget .footer-about .social-icon ul .icon-hover:hover {
+  color: #f36a07;
+}
+.main-footer .footer-wrapper .contact-footer .footer-heading {
+  font-weight: 400;
   font-size: 20px;
+  color: #121111;
+}
+.main-footer .footer-wrapper .contact-footer li {
+  margin-bottom: 5px;
+}
+.main-footer .footer-wrapper .contact-footer li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #74787c;
+}
+.main-footer .footer-wrapper .contact-footer li a:hover {
+  color: #f36a07;
+}
+
+.footer-bottom {
+  padding-top: 46px;
+  border-top: 1px solid #efefef;
+}
+.footer-bottom .footer-base-link ul {
+  display: flex;
+  justify-content: end;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.footer-bottom .footer-base-link ul #svg-icon:hover {
+  color: #f36a07;
 }
