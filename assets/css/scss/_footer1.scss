@@ -92,8 +92,13 @@
       display: flex;
       justify-content: end;
       column-gap: 40px;
-      #svg-icon:hover {
-        color: $secondary_color;
+      a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        &:hover {
+          color: $secondary_color;
+        }
       }
     }
   }

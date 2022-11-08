@@ -29,6 +29,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
+    .row {
+      justify-content: end;
+    }
+    select {
+      background-color: $primary_black;
+      border: none;
+      color: $text_white;
+    }
     a {
       text-decoration: none;
       color: $text_white;
