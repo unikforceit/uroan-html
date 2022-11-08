@@ -77,9 +77,10 @@
   }
 }
 .breadcrumb {
-  background-image: url(assets//img/bgimg.png);
+  background-image: url('/assets/img/bgimg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0;
+  margin: 0;
 }
