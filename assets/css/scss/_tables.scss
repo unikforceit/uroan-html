@@ -1,0 +1,14 @@
+.table {
+  border: 1px solid #e8e8e8;
+  thead {
+    background-color: $primary_black;
+    color: $text_white;
+  }
+  tr {
+    td {
+      .table-flex {
+        column-gap: 20px;
+      }
+    }
+  }
+}

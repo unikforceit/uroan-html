@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uroan - login-page</title>
+  <title>Uroan - product-details2</title>
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -102,38 +104,141 @@
   <!-- breadcrumb section -->
   <section class="breadcrumb">
     <div class="container">
-      <h6>Home / Login</h6>
+      <h6>Home / Shop / Neaklace</h6>
     </div>
   </section>
   <!-- end breadcrumb section -->
-
-  <section class="login-section sec-gap">
+  <!-- product -->
+  <section class="product-img sec-gap">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="form-main-wrapper">
-            <h3 class="form-title">Login Account</h3>
-            <div class="form-wrapper">
-              <form action="">
-                <div class="input-group">
-                  <input type="email" placeholder="User name or email address*" name="email" id="email"
-                    class="form-control">
+        <div class="col-md-10">
+          <div class="heading-img">
+            <img src="assets/img/main.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="side-img">
+            <img src="assets/img/s-1.png" alt="">
+          </div>
+          <div class="side-img">
+            <img src="assets/img/s2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="product-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="product-details">
+            <div class="product-heading">
+              <p class="caption-sub-title">Neaklace</p>
+              <h3>Tony Gold Neaklaces</h3>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(1 customer review)</span>
+              <p class="price">$260.00 - $360.00</p>
+              <p class="border-top border-bottom product-text">Eget taciti odio habitant egestas conubia turpis
+                phasellus parturient
+                donec duis primis nam faucibus augue malesuada venenatis</p>
+            </div>
+            <div class="mr-shipping-selivary-return">
+              <div class="shipping-selivary-return">
+                <span><img src="assets/svg/return_icon.svg" alt=""></span>
+                <p>Free returns</p>
+              </div>
+            </div>
+            <div class="mr-shipping-selivary-return">
+              <div class="shipping-selivary-return">
+                <span><img src="assets/svg/shipping-icon.svg" alt=""></span>
+                <p>Free shipping via DHL, fully insured</p>
+              </div>
+            </div>
+            <div class="mr-shipping-selivary-return">
+              <div class="shipping-selivary-return">
+                <span><img src="assets/svg/check-mark.svg" alt=""></span>
+                <p>All taxes and customs duties included</p>
+              </div>
+            </div>
+            <div class="row cart">
+              <div class="col-md-4">
+                <div class="input-group quantity-selector quantity-selector-sm">
+                  <input type="number" id="inputQuantitySelectorSm" class="form-control" aria-live="polite"
+                    data-bs-step="counter" name="quantity" title="quantity" value="0" min="0" max="10" step="1"
+                    data-bs-round="0" aria-label="Quantity selector">
+                  <button type="button" class="btn btn-icon btn-secondary btn-sm"
+                    aria-describedby="inputQuantitySelectorSm" data-bs-step="down">
+                    <span class="visually-hidden">Step down</span>
+                  </button>
+                  <button type="button" class="btn btn-icon btn-secondary btn-sm"
+                    aria-describedby="inputQuantitySelectorSm" data-bs-step="up">
+                    <span class="visually-hidden">Step up</span>
+                  </button>
                 </div>
-                <div class="input-group">
-                  <input type="password" placeholder="Password*" name="pass" id="pass" class="form-control">
+              </div>
+              <div class="col-md-4">
+                <button class="uroan-btn">Add To Cart</button>
+              </div>
+              <div class="col-md-4">
+                <div class="wishlist">
+                  <i class="fa-thin fa-heart"></i>
+                  <p>Add To Wishlist</p>
                 </div>
-                <div class="input-group justify-content-between">
-                  <div class="remember">
-                    <input type="checkbox" name="remember" id="remember"> Remember me
-                  </div>
-                  <div class="forgot">
-                    <a href="#">Lost your password?</a>
-                  </div>
+              </div>
+            </div>
+            <div class="sku-section">
+              <p>SKU:17</p>
+              <p>Categories: Light Bulb, Table
+              </p>
+              <p>Tags: Iluminate, Textured</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne">1. What is HTML?</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                  <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure
+                    of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
                 </div>
-                <button type="submit" class="uroan-btn">Login</button>
-                <div class="login-link">
-                  <span>Not registered yet? <a href="#">Create an Account</a></span>
-              </form>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. What is
+                  Bootstrap?</button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                  <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It
+                    is a collection of CSS and HTML conventions. <a
+                      href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree">3. What is CSS?</button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                  <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML
+                    element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/"
+                      target="_blank">Learn more.</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,6 +246,8 @@
     </div>
   </section>
 
+
+  <!-- end-contact -->
   <!-- footer-section -->
   <footer class="main-footer">
     <!-- newsletter-section -->
@@ -253,3 +360,14 @@
     </div>
 
   </footer>
+
+
+
+
+  <!-- end-footer-section -->
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

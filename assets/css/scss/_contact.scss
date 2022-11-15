@@ -1,0 +1,81 @@
+.contact {
+  padding: 120px 0;
+  .contact-header {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+    h5 {
+      color: $secondary_color;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 40px;
+      font-family: $secondary_font;
+      color: $primary_black;
+      margin-bottom: 16px;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
+  .contact-form {
+    background-color: $third_color;
+    padding: 60px;
+    .input-group {
+      input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        padding: 15px 30px;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 160px;
+      border: none;
+      margin-top: 20px;
+      padding: 20px 30px;
+      color: $paragraph_color;
+      &:focus {
+        border: none;
+      }
+    }
+    button {
+      width: 100%;
+      height: 55px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.blog-section {
+  padding: 120px 0;
+
+  .blog-box {
+    background-color: $third_color;
+    text-align: center;
+
+    h3 {
+      padding-top: 65px;
+      font-size: 30px;
+      color: $primary_black;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $primary_black;
+        width: 30px;
+        height: 1px;
+        bottom: -20px;
+        left: 47%;
+      }
+    }
+    p {
+      padding: 39px 62px 80px;
+    }
+  }
+}
