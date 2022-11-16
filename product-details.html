@@ -112,13 +112,13 @@
               <p class="caption-sub-title">Neaklace</p>
               <h3 class="product-single-title">Tony Gold Neaklaces</h3>
               <div class="review">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(1 customer review)</span>
               </div>
-              <span>(1 customer review)</span>
               <p class="price">$260.00 - $360.00</p>
               <p class="border-top border-bottom product-text">Eget taciti odio habitant egestas conubia turpis
                 phasellus parturient
@@ -142,37 +142,31 @@
                 <p>All taxes and customs duties included</p>
               </div>
             </div>
-            <div class="row cart">
-              <div class="col-md-4">
-                <div class="input-group quantity-selector quantity-selector-sm">
-                  <input type="number" id="inputQuantitySelectorSm" class="form-control" aria-live="polite"
-                    data-bs-step="counter" name="quantity" title="quantity" value="0" min="0" max="10" step="1"
-                    data-bs-round="0" aria-label="Quantity selector">
-                  <button type="button" class="btn btn-icon btn-secondary btn-sm"
-                    aria-describedby="inputQuantitySelectorSm" data-bs-step="down">
-                    <span class="visually-hidden">Step down</span>
-                  </button>
-                  <button type="button" class="btn btn-icon btn-secondary btn-sm"
-                    aria-describedby="inputQuantitySelectorSm" data-bs-step="up">
-                    <span class="visually-hidden">Step up</span>
-                  </button>
-                </div>
+            <div class="product-action">
+              <div>
+                <button type="button" id="sub" class="minus">-</button>
+                <input type="number" id="1" value="1" min="1" class='quantity' max="10">
+                <button type="button" id="add" class="plus">+</button>
               </div>
-              <div class="col-md-4">
-                <button class="uroan-btn">Add To Cart</button>
+              <div class="cart-btn">
+                <button class="uroan-btn">Add To Cart <i class="fas fa-bag-shopping"></i></button>
               </div>
-              <div class="col-md-4">
-                <div class="wishlist">
-                  <i class="fas fa-heart"></i>
-                  <p>Add To Wishlist</p>
-                </div>
+              <div class="wishlist">
+                <button><i class="fas fa-heart"></i> Add To Wishlist</button>
               </div>
             </div>
             <div class="sku-section">
               <p>SKU:17</p>
-              <p>Categories: Light Bulb, Table
-              </p>
-              <p>Tags: Iluminate, Textured</p>
+              <ul>
+                <p>Categories:
+                  <a href="#">Light Bulb,</a>
+                  <a href="#">Table</a>
+                </p>
+                <p>Tags:
+                  <a href="#">Light Bulb</a>
+                  <a href="#">Textured</a>
+                </p>
+              </ul>
             </div>
           </div>
         </div>
@@ -189,7 +183,7 @@
                 <img src="assets/img/s-2.png" alt="">
               </div>
               <div class="product-side-img">
-                <img src="assets/img/s-3 (1).png" alt="">
+                <img src="assets/img/s-3-(1).png" alt="">
               </div>
             </div>
           </div>
@@ -199,78 +193,169 @@
   <section class="product-description">
     <div class="container">
       <div class="description-header">
-        <span>Description</span>
-        <span>Additional information</span>
-        <span>Reviews(2)</span>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <p class="description-paragraph">Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Lorem ipsum
-            dolor sit amet, consectetur
-            adipiscing
-            elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet,
-            consectetur
-            adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in
-            ipsum
-            id orci
-            porta dapibu estibulum ante ipsum primis.</p>
-          <div class="mr-shipping-selivary-return">
-            <div class="shipping-selivary-return">
-              <span><img src="assets/svg/return_icon.svg" alt=""></span>
-              <p>Free returns</p>
-            </div>
-          </div>
-          <div class="mr-shipping-selivary-return">
-            <div class="shipping-selivary-return">
-              <span><img src="assets/svg/shipping-icon.svg" alt=""></span>
-              <p>Free shipping via DHL, fully insured</p>
-            </div>
-          </div>
-          <div class="mr-shipping-selivary-return">
-            <div class="shipping-selivary-return">
-              <span><img src="assets/svg/check-mark.svg" alt=""></span>
-              <p>All taxes and customs duties included</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="description-img">
-            <img src="assets/img/video.png" alt="">
-            <div class="img-play-icon">
-              <img src="assets/svg/play.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="related-products">
-        <h3>Related-Products</h3>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="product-item">
-              <div class="products-img-area">
-                <div class="tag">
-                  <span>-50%</span>
-                </div>
-                <div class="produt-thumb-img">
-                  <img src="assets/img/1.png" alt="">
+        <ul class="nav nav-tabs">
+          <li class="active nav-item">
+            <a class="nav-link" href="#1b" data-toggle="tab">Description</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#2b" data-toggle="tab">Additional information</a>
+          </li>
+          <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#3b">Reviews(2)</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="row tab-pane fade show active" id="#1b">
+            <div class="col-md-8 ">
+              <p class="description-paragraph">Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Lorem
+                ipsum
+                dolor sit amet, consectetur
+                adipiscing
+                elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit
+                amet,
+                consectetur
+                adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in
+                ipsum
+                id orci
+                porta dapibu estibulum ante ipsum primis.</p>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/return_icon.svg" alt=""></span>
+                  <p>Free returns</p>
                 </div>
               </div>
-              <div class="image-hover-area">
-                
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/shipping-icon.svg" alt=""></span>
+                  <p>Free shipping via DHL, fully insured</p>
+                </div>
               </div>
-              <div class="products-content">
-                <a href="#">Necklaces</a>
-                <a href=""><h5>Amazing Gold Plated</h5></a>
-                <div class="pirce">
-                  <ins>$250.00</ins>
-                  <del>$350.00</del>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/check-mark.svg" alt=""></span>
+                  <p>All taxes and customs duties included</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="description-img">
+                <img src="assets/img/video.png" alt="">
+                <div class="img-play-icon">
+                  <img src="assets/svg/play.svg" alt="">
                 </div>
               </div>
             </div>
           </div>
+          <div class="row tab-pane" id="#2b">
+            <div class="col-md-8 ">
+              <p class="description-paragraph">Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Lorem
+                ipsum
+                dolor sit amet, consectetur
+                adipiscing
+                elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit
+                amet,
+                consectetur
+                adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in
+                ipsum
+                id orci
+                porta dapibu estibulum ante ipsum primis.</p>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/return_icon.svg" alt=""></span>
+                  <p>Free returns</p>
+                </div>
+              </div>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/shipping-icon.svg" alt=""></span>
+                  <p>Free shipping via DHL, fully insured</p>
+                </div>
+              </div>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/check-mark.svg" alt=""></span>
+                  <p>All taxes and customs duties included</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="description-img">
+                <img src="assets/img/video.png" alt="">
+                <div class="img-play-icon">
+                  <img src="assets/svg/play.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row tab-pane fade" id="#3b">
+            <div class="col-md-8">
+              <p class="description-paragraph">Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Lorem
+                ipsum
+                dolor sit amet, consectetur
+                adipiscing
+                elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit
+                amet,
+                consectetur
+                adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in
+                ipsum
+                id orci
+                porta dapibu estibulum ante ipsum primis.</p>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/return_icon.svg" alt=""></span>
+                  <p>Free returns</p>
+                </div>
+              </div>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/shipping-icon.svg" alt=""></span>
+                  <p>Free shipping via DHL, fully insured</p>
+                </div>
+              </div>
+              <div class="mr-shipping-selivary-return">
+                <div class="shipping-selivary-return">
+                  <span><img src="assets/svg/check-mark.svg" alt=""></span>
+                  <p>All taxes and customs duties included</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="description-img">
+                <img src="assets/img/video.png" alt="">
+                <div class="img-play-icon">
+                  <img src="assets/svg/play.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="related-products">
+          <h3>Related-Products</h3>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-item">
+                <div class="products-img-area">
+                  <div class="tag">
+                    <span>-50%</span>
+                  </div>
+                  <div class="produt-thumb-img">
+                    <img src="assets/img/1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="products-content">
+                  <a href="#">Necklaces</a>
+                  <a href="">
+                    <h5>Amazing Gold Plated</h5>
+                  </a>
+                  <div class="pirce">
+                    <ins>$250.00</ins>
+                    <del>$350.00</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
 
