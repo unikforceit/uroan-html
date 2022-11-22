@@ -35,4 +35,13 @@ img{
 }
 .sec-gap{
   padding: 120px 0;
+  @media screen and (max-width: 991px) {
+    padding: 80px 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 70px 0;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 50px 0;
+  }
 }
