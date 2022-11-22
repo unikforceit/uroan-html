@@ -522,6 +522,39 @@ body {
   margin-bottom: 40px;
 }
 
+.product-description .tab-content {
+  padding: 40px 0;
+}
+.product-description .tab-content .comment-box {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-top: 40px;
+  display: flex;
+}
+.product-description .tab-content .comment-box .comment-author {
+  flex: 0 0 100px;
+}
+.product-description .tab-content .comment-box .comment-text {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 25px;
+}
+.product-description .tab-content .comment-box .comment-text .review {
+  color: #121111;
+}
+
+.thumb-vartical-slide {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.product-description .description-header .product-tabs-area nav ul button {
+  background-color: transparent;
+  border: none;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
 .product-item .products-img-area {
   position: relative;
   overflow: hidden;
@@ -594,6 +627,23 @@ body {
 }
 .product-item .products-content .price ins {
   text-decoration: none;
+}
+
+.product-color {
+  font-weight: 300;
+  color: #121111;
+  margin-bottom: 10px;
+}
+
+.product-gap {
+  margin-bottom: 40px;
+}
+
+.product-description .description-header .product-tabs-area nav ul button {
+  background-color: transparent;
+  border: none;
+  padding-right: 30px;
+  font-size: 20px;
 }
 
 .accordion-section {

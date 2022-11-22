@@ -73,3 +73,23 @@ body {
     }
   }
 }
+.product-description {
+  .tab-content {
+    padding: 40px 0;
+    .comment-box {
+      column-gap: 30px;
+      margin-top: 40px;
+      display: flex;
+      .comment-author {
+        flex: 0 0 100px;
+      }
+      .comment-text {
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 25px;
+        .review {
+          color: $primary_black;
+        }
+      }
+    }
+  }
+}
