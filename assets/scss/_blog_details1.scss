@@ -75,6 +75,12 @@
       }
       ul {
         column-gap: 15px;
+        i {
+          color: $primary_black;
+          &:hover {
+            color: $secondary_color;
+          }
+        }
       }
     }
     .author {
@@ -97,6 +103,13 @@
           .author-social-icon {
             display: flex;
             column-gap: 10px;
+            i {
+              border: 1px solid #eaeaea;
+              padding: 13px;
+              &:hover {
+                color: $secondary_color;
+              }
+            }
           }
         }
       }
