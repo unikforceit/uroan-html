@@ -72,16 +72,22 @@ Last change:    00/00/00
         $("#sidemenu").on("click", function () {
           $(".sidemenu-wrap").addClass("sidebar-open");
         });
-        $("#sidemenu-close").on("click", function () {
+        $("#side-cart").on("click", function(){
+          $(".cart-drawer").toggleClass("cart-open");
+        });
+        $("#sidemenu").on("click", function () {
+          $(".overlay").addClass("open");
+        }); 
+        $("#search-manu").on("click",function(){
+          $(".search-popup").addClass("popup");
+          $(".overlay").addClass("open");
+        });
+        $(".overlay").on("click", function () {
           $(".sidemenu-wrap").removeClass("sidebar-open");
+          $(".overlay").removeClass("open");
+          $(".search-popup").removeClass("popup");
         });
-        $("#search").on("click", function () {
-          $(".search-bar").addClass("search-open");
-        });
-        $(".serach-close").on("click", function () {
-          $(".search-bar").removeClass("search-open");
-        });
-      },
+       },
       Tools: function () {
         $(".menu-search button").on("click", function () {
           $('.menu-search input[type="search"]').toggleClass("search-visible");

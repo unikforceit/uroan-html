@@ -30,6 +30,7 @@
   <div class="scroll-top">
     <i class="fas fa-arrow-up"></i>
   </div>
+  <div class="overlay"></div>
   <!-- Start header -->
   <header class="default-header-section">
     <div class="container">
@@ -46,29 +47,25 @@
           </div>
           <div class="col-md-5">
             <div class="drop-manu">
-              <div class="row">
-                <div class="col-md-2">
-                  <div>
-                    <select>
-                      <option value="one">EN</option>
-                      <option value="two">BN</option>
-                      <option value="three">FR</option>
-                    </select>
-                  </div>
+              <div class="top-header-right">
+                <div class="language">
+                  <select>
+                    <option value="one">EN</option>
+                    <option value="two">BN</option>
+                    <option value="three">FR</option>
+                  </select>
                 </div>
-                <div class="col-md-2">
-                  <div>
-                    <select>
-                      <option value="one">USD</option>
-                      <option value="two">BDT</option>
-                      <option value="three">EUR</option>
-                    </select>
-                  </div>
+                <div class="currency">
+                  <select>
+                    <option value="one">USD</option>
+                    <option value="two">BDT</option>
+                    <option value="three">EUR</option>
+                  </select>
                 </div>
-                <div class="col-md-1">
+                <div class="store">
                   <a href="#">Strore</a>
                 </div>
-                <div class="col-md-1">
+                <div class="Subscribe">
                   <a href="#">Subscribe</a>
                 </div>
               </div>
@@ -77,7 +74,7 @@
         </div>
       </div>
       <div class="bottom-header">
-        <div class="row justify-content-between align-items-center">
+        <div class="row justify-content-between">
           <div class="col-lg-2 col-md-4 col-sm-8 logo-col">
             <div class="logo">
               <a href="index.html">
@@ -85,7 +82,7 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-8 col-md-8 col-sm-4 menu-col">
+          <div class="col-lg-7 col-md-8 col-sm-4 menu-col">
             <!--Main Menu-->
             <div class="main-menu-navigation">
               <nav class="navigation-main-area ul-li">
@@ -95,7 +92,13 @@
                     <ul class="dropdown-menu clearfix">
                       <li><a href="index.html">Home Page 1</a></li>
                       <li><a href="home_02.html">Home Page 2</a></li>
-                      <li><a href="home_03.html">Home Page 3</a></li>
+                      <li class="dropdown"><a href="home_03.html">Home Page 3</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="index.html">Home Page 1</a></li>
+                          <li><a href="home_02.html">Home Page 2</a></li>
+                          <li><a href="home_03.html">Home Page 3</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -216,26 +219,32 @@
             </div>
             <!-- End Mobile Menu -->
           </div>
-          <div class="col-lg-2 text-end display-none header-right">
-            <a href="#">
-              <i class="fa-regular fa-user"></i>
-            </a>
-            <a href="#" id="search">
-              <i class="fa-solid fa-basket-shopping"></i>
-              <span>Cart ($0.00)</span>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#" id="sidemenu">
-              <i class="fa-solid fa-bars"></i>
-            </a>
+          <div class="col-lg-3">
+            <div class="header-right">
+              <ul>
+                <li><a href="#">
+                    <i class="fa-regular fa-user"></i>
+                  </a></li>
+                <li>
+                  <a href="#" id="side-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>Cart ($0.00)</span>
+                  </a>
+                </li>
+                <li><a href="#" id="search-manu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a></li>
+                <li><a href="#" id="sidemenu">
+                    <i class="fa-solid fa-bars"></i>
+                  </a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
   </header>
+  
   <div class="sidemenu-wrap">
-    <button id="sidemenu-close"><i class="fa-solid fa-square-xmark"></i></button>
     <div class="side-manu">
       <h2>Uroan</h2>
       <p><a href="#">Distrak Street 2SK Line, Germany
@@ -277,37 +286,73 @@
       </div>
     </div>
   </div>
-  <div class="search-bar">
-    <button class="serach-close" value=""><i class="fa-solid fa-square-xmark"></i></button>
-    <div class="cart-product">
-      <img src="assets/img/product-img2.png" alt="">
-      <div class="cart-product-details">
-        <h6>Weeding Rings</h6>
-        <ins>$250.00</ins>
-        <p>Quantity: 1</p>
-      </div>
-    </div>
-    <div class="cart-product">
-      <img src="assets/img/product-img1.png" alt="">
-      <div class="cart-product-details">
-        <h6>Hotako Bracelet</h6>
-        <ins>$250.00</ins>
-        <p>Quantity: 1</p>
-      </div>
-    </div>
-    <div class="cart-product">
-      <img src="assets/img/product-img2.png" alt="">
-      <div class="cart-product-details">
-        <h6>Sweet Gold Rings</h6>
-        <ins>$250.00</ins>
-        <p>Quantity: 1</p>
-      </div>
-    </div>
+  <div class="cart-drawer">
+    <ul>
+      <li class="cart-product">
+       <div class="cart-thumb">
+        <img src="assets/img/product-img2.png" alt="">
+       </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+         <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      <li class="cart-product">
+       <div class="cart-thumb">
+        <img src="assets/img/product-img2.png" alt="">
+       </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+         <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      <li class="cart-product">
+       <div class="cart-thumb">
+        <img src="assets/img/product-img2.png" alt="">
+       </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+         <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      <li class="cart-product">
+       <div class="cart-thumb">
+        <img src="assets/img/product-img2.png" alt="">
+       </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+         <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      
+    </ul>
     <div class="total-price">
       <span>Total:</span>
       <ins>$750.00</ins>
     </div>
-    <button class="uroan-btn" value="">View Cart & Check Out</button>
+    <a href="#" class="uroan-btn">View Cart & Check Out</a>
+  </div>
+  <div class="search-popup">
+    <div class="side-newletter">
+     <input type="text" placeholder="Search here....">
+      <button class="uroan-btn">Search Now</button>
+    </div>
   </div>
   <!-- End header -->
   <!-- breadcrumb section -->

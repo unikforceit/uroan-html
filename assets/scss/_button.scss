@@ -1,10 +1,18 @@
 .uroan-btn {
-  width: 160px;
-  height: 46px;
+  padding: 13px 0;
+  min-width: 160px;
   color: $text_white;
   background-color: $primary_black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  &:hover{
+    color: $primary_black;
+    background-color: transparent;
+    border: 1px solid $primary_black;
+
+  }
 }
