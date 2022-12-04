@@ -15,7 +15,7 @@
 
 <body>
   <!-- Preloader -->
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div class="vertical-centered-box">
       <div class="content">
         <div class="loader-circle"></div>
@@ -25,7 +25,7 @@
         <img src="assets/img/logo.png" alt="">
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Scroll -->
   <div class="scroll-top">
     <i class="fas fa-arrow-up"></i>
@@ -220,20 +220,95 @@
             <a href="#">
               <i class="fa-regular fa-user"></i>
             </a>
-            <a href="#">
+            <a href="#" id="search">
               <i class="fa-solid fa-basket-shopping"></i>
               <span>Cart ($0.00)</span>
             </a>
             <a href="#">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
-            <a href="#">
+            <a href="#" id="sidemenu">
               <i class="fa-solid fa-bars"></i>
             </a>
           </div>
         </div>
       </div>
   </header>
+  <div class="sidemenu-wrap">
+    <button id="sidemenu-close"><i class="fa-solid fa-square-xmark"></i></button>
+    <div class="side-manu">
+      <h2>Uroan</h2>
+      <p><a href="#">Distrak Street 2SK Line, Germany
+          galore@inside-support.com
+          (+125) 2156-2145</a></p>
+    </div>
+    <div class="side-img">
+      <img src="assets/img/sm1.png" alt="">
+      <img src="assets/img/sm2.png" alt="">
+      <img src="assets/img/sm3.png" alt="">
+      <img src="assets/img/sm4.png" alt="">
+      <img src="assets/img/sm5.png" alt="">
+      <img src="assets/img/sm6.png" alt="">
+    </div>
+    <div class="side-newletter">
+      <h2>Newsletter</h2>
+      <input type="email" placeholder="Enter your e-mail">
+      <button class="uroan-btn">Subscribe Now</button>
+    </div>
+    <div class="side-manu-select">
+      <div>
+        <img src="assets/img/flag.png" alt="">
+        <select>
+          <option value="one">ENGLISH</option>
+          <option value="two">BN</option>
+          <option value="three">FR</option>
+        </select>
+        <select>
+          <option value="one">USD</option>
+          <option value="two">BN</option>
+          <option value="three">FR</option>
+        </select>
+      </div>
+      <div class="account-manu">
+        <a href="#">
+          <i class="fa-regular fa-user"></i>
+          <span>Account</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="search-bar">
+    <button class="serach-close" value=""><i class="fa-solid fa-square-xmark"></i></button>
+    <div class="cart-product">
+      <img src="assets/img/product-img2.png" alt="">
+      <div class="cart-product-details">
+        <h6>Weeding Rings</h6>
+        <ins>$250.00</ins>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+    <div class="cart-product">
+      <img src="assets/img/product-img1.png" alt="">
+      <div class="cart-product-details">
+        <h6>Hotako Bracelet</h6>
+        <ins>$250.00</ins>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+    <div class="cart-product">
+      <img src="assets/img/product-img2.png" alt="">
+      <div class="cart-product-details">
+        <h6>Sweet Gold Rings</h6>
+        <ins>$250.00</ins>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+    <div class="total-price">
+      <span>Total:</span>
+      <ins>$750.00</ins>
+    </div>
+    <button class="uroan-btn" value="">View Cart & Check Out</button>
+  </div>
   <!-- End header -->
   <!-- breadcrumb section -->
   <section class="breadcrumb">
@@ -292,8 +367,14 @@
                   vivamus aliquet sollicitudin condimentum conubia.</p>
               </div>
               <div class="blog-images">
-                <img src="assets/img/blog-img.png" alt="">
-                <img src="assets/img/blog-img1.png" alt="">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img src="assets/img/blog-img.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="assets/img/blog-img1.png" alt="">
+                  </div>
+                </div>
               </div>
               <div class="blog-paragraph bottom-paragraph">
                 <p>Vestibulum ante ipsum primis in faucibus orci luctus ultrices posuere cubilia Curae; Donec velit
@@ -305,7 +386,7 @@
                   eget malesuada urabitur non nulla sit amet nisl tempus</p>
               </div>
               <div class="social-tag">
-                <div class="row mt-5">
+                <div class="row mt-5 align-items-center">
                   <div class="col-md-6">
                     <div class="button-tags">
                       <ul>

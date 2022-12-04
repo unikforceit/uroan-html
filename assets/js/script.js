@@ -19,6 +19,7 @@ Last change:    00/00/00
         this.scrollTop();
         // this.Animation();
         this.NiceNumber();
+        this.SidebarMenu();
         // this.Niceselect();
       },
       preloader: function () {
@@ -68,19 +69,18 @@ Last change:    00/00/00
         }
       },
       SidebarMenu: function () {
-        if ($(".sidebar_dropdown").length) {
-          $(".sidebar_dropdown").append(
-            '<div class="sidebar-dropdown-btn"><span class="fas fa-plus"></span></div>'
-          );
-          $(".sidebar-dropdown-btn").on("click", function () {
-            $(this).prev("ul").slideToggle(500);
-            $(this).html(
-              $(this).html() == '<span class="fas fa-plus"></span>'
-                ? '<span class="fas fa-minus"></span>'
-                : '<span class="fas fa-plus"></span>'
-            );
-          });
-        }
+        $("#sidemenu").on("click", function () {
+          $(".sidemenu-wrap").addClass("sidebar-open");
+        });
+        $("#sidemenu-close").on("click", function () {
+          $(".sidemenu-wrap").removeClass("sidebar-open");
+        });
+        $("#search").on("click", function () {
+          $(".search-bar").addClass("search-open");
+        });
+        $(".serach-close").on("click", function () {
+          $(".search-bar").removeClass("search-open");
+        });
       },
       Tools: function () {
         $(".menu-search button").on("click", function () {

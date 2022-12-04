@@ -37,6 +37,9 @@
       }
       a {
         color: $primary_black;
+        &:hover {
+          color: $secondary_color;
+        }
       }
     }
   }

@@ -190,6 +190,7 @@
         font-weight: 500;
         font-size: 14px;
         border: none;
+        transition: all 0.3s ease-in-out;
         &:hover {
           color: $text_white;
           background-color: $primary_black;
