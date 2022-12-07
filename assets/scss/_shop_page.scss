@@ -32,8 +32,11 @@
   background-color: #eb9a3c;
   border-radius: 50%;
   display: inline-block;
+  input {
+    display: none;
+  }
 }
-.Pink {
+.pink {
   background-color: #faa9d9;
 }
 .green {
@@ -46,11 +49,24 @@
   background-color: #eeeaca;
 }
 
-.related-products .form-select {
-  width: 178px;
-  height: 50px;
-  margin-left: auto;
-  margin-bottom: 40px;
-  border-radius: inherit;
-  box-shadow: none;
+.related-products {
+  .notices-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    .form-select {
+      width: 178px;
+      height: 50px;
+      border-radius: inherit;
+      box-shadow: none;
+    }
+  }
+}
+.pb-60 {
+  margin-bottom: 60px !important;
+}
+.widget-post {
+  display: flex;
+  justify-content: space-between;
 }
