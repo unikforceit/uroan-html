@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+/**
+*
+* Testing
+*
+**/
 body {
   font-family: "Prompt", serif;
   color: #74787c;
@@ -1838,6 +1843,17 @@ body {
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 60px;
 }
+.blog-details .blog-description .social-tag .social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .blog-details .blog-description .social-tag .social-wrapper .button-tags {
+    margin-bottom: 20px;
+  }
+}
 .blog-details .blog-description .button-tags span {
   font-weight: 500;
   color: #121111;
@@ -1947,6 +1963,11 @@ body {
 .blog-details .blog-description .comments .comment-box .comment-author {
   flex: 0 0 100px;
 }
+@media screen and (max-width: 991px) {
+  .blog-details .blog-description .comments {
+    padding: 0 30px;
+  }
+}
 .blog-details .customer-review {
   margin-top: 60px;
 }
@@ -1962,9 +1983,9 @@ body {
   background-color: #f6f6f6;
   border: none;
   padding: 15px 0 16px 25px;
+  margin-bottom: 20px;
 }
 .blog-details .customer-review form textarea {
-  margin-top: 20px;
   height: 170px;
   background-color: #f6f6f6;
   border: none;
@@ -1983,6 +2004,11 @@ body {
 .blog-details .customer-review form button:hover {
   color: #ffffff;
   background-color: #121111;
+}
+@media screen and (max-width: 991px) {
+  .blog-details .customer-review {
+    padding: 0 30px;
+  }
 }
 .blog-details .sidebar {
   padding-left: 35px;
@@ -2025,6 +2051,7 @@ body {
   display: flex;
   -moz-column-gap: 15px;
        column-gap: 15px;
+  margin-bottom: 15px;
 }
 .blog-details .sidebar .latest-widget .widget-img {
   flex: 0 0 90px;
@@ -2036,10 +2063,14 @@ body {
   font-size: 14px;
 }
 .blog-details .sidebar .latest-widget-details p {
-  margin-top: 10px;
   font-weight: 400;
   font-size: 18px;
   color: #121111;
+}
+@media screen and (max-width: 991px) {
+  .blog-details .sidebar {
+    padding: 35px;
+  }
 }
 .blog-details .widget-button {
   margin-top: 51px;
@@ -2176,7 +2207,7 @@ body {
 .main-footer .newsletter-wraper .newsletter-form .uroan-btn {
   position: absolute;
   right: 3px;
-  top: 2px;
+  top: 3px;
 }
 .main-footer .newsletter-wraper .privacy-policy {
   padding-top: 30px;
