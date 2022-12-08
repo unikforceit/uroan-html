@@ -1064,7 +1064,6 @@ body {
 .accordion-section .faq-form button {
   width: 334px;
   height: 55px;
-  border: none;
 }
 
 .default-header-section {
@@ -1211,6 +1210,11 @@ body {
 .header-right ul a#side-cart i {
   padding-right: 10px;
 }
+@media (max-width: 1366px) {
+  .header-right ul a#side-cart span {
+    display: none;
+  }
+}
 .header-right ul a span,
 .header-right ul a i {
   color: #ffffff;
@@ -1224,6 +1228,17 @@ body {
 @media screen and (max-width: 991px) {
   .header-right {
     display: none;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .header-right #solid-bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .header-right {
+    -moz-column-gap: 62px;
+         column-gap: 62px;
   }
 }
 
@@ -1297,6 +1312,18 @@ body {
   justify-content: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
+}
+@media (max-width: 1366px) {
+  .navigation-main-area ul {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .navigation-main-area ul {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
 }
 
 .navigation-main-area li a {

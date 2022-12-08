@@ -171,8 +171,12 @@
         i {
           padding-right: 10px;
         }
+        span {
+          @include media("<=desktop") {
+            display: none;
+          }
+        }
       }
-
       text-decoration: none;
 
       span,
@@ -189,6 +193,14 @@
   }
   @media screen and (max-width: 991px) {
     display: none;
+  }
+  #solid-bar {
+    @media screen and (max-width: 1025px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    column-gap: 62px;
   }
 }
 
@@ -275,6 +287,12 @@
     display: flex;
     justify-content: center;
     column-gap: 32px;
+    @include media("<=desktop") {
+      column-gap: 20px;
+    }
+    @media screen and (max-width: 1080px) {
+      column-gap: 10px;
+    }
   }
 }
 
@@ -472,6 +490,11 @@
   font-size: 30px;
   line-height: 0px;
   text-align: right;
+  // @media screen and (max-width: 1025px) {
+  //   position: absolute;
+  //   right: -259px;
+  //   top: -3px;
+  // }
 }
 
 .mobile_menu .mobile-main-navigation .navbar-nav li a:after {
