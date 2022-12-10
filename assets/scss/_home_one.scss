@@ -1,0 +1,21 @@
+.hero-banner {
+  background-image: url(/assets/img/home-one-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 866px;
+  margin-bottom: 120px;
+  .hero-content {
+    padding: 238px 0px 238px 300px;
+    span {
+      font-size: 20px;
+      color: $primary_black;
+      margin-bottom: 40px;
+      display: inline-block;
+    }
+    h1 {
+      width: 675px;
+      font-size: 100px;
+    }
+  }
+}

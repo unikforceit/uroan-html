@@ -979,6 +979,28 @@ body {
   text-decoration: none;
 }
 
+.hero-banner {
+  background-image: url(/assets/img/home-one-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 866px;
+  margin-bottom: 120px;
+}
+.hero-banner .hero-content {
+  padding: 238px 0px 238px 300px;
+}
+.hero-banner .hero-content span {
+  font-size: 20px;
+  color: #121111;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.hero-banner .hero-content h1 {
+  width: 675px;
+  font-size: 100px;
+}
+
 .banner {
   background-image: url(/assets/img/banner.png);
   background-repeat: no-repeat;
@@ -1210,7 +1232,7 @@ body {
 .header-right ul a#side-cart i {
   padding-right: 10px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1457px) {
   .header-right ul a#side-cart span {
     display: none;
   }
@@ -1976,6 +1998,12 @@ body {
 }
 .blog-details .blog-description .comments .comment-box .comment-text .comment-date {
   margin-bottom: 10px;
+}
+.blog-details .blog-description .comments .comment-box .comment-text .comment-title a {
+  text-decoration: none;
+}
+.blog-details .blog-description .comments .comment-box .comment-text .comment-title a:hover {
+  color: #f36a07;
 }
 .blog-details .blog-description .comments .comment-box .comment-text .comment-reply {
   position: absolute;

@@ -172,7 +172,7 @@
           padding-right: 10px;
         }
         span {
-          @include media("<=desktop") {
+          @include media("<=xldesktop") {
             display: none;
           }
         }

@@ -153,6 +153,14 @@
           .comment-date {
             margin-bottom: 10px;
           }
+          .comment-title {
+            a {
+              text-decoration: none;
+              &:hover {
+                color: $secondary_color;
+              }
+            }
+          }
           .comment-reply {
             position: absolute;
             right: 0;
