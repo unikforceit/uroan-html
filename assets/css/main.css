@@ -984,11 +984,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 866px;
-  margin-bottom: 120px;
+  position: relative;
+  overflow: hidden;
 }
 .hero-banner .hero-content {
-  padding: 238px 0px 238px 300px;
+  padding: 238px 0;
 }
 .hero-banner .hero-content span {
   font-size: 20px;
@@ -1000,6 +1000,156 @@ body {
   width: 675px;
   font-size: 100px;
   font-family: "Italiana", serif;
+  margin-bottom: 50px;
+}
+.hero-banner .hero-content-img {
+  width: 1072px;
+  height: 1072px;
+  position: absolute;
+  border: 1px solid #f36a07;
+  border-radius: 50%;
+  top: 94px;
+}
+.hero-banner .hero-content-img .hero-content-border {
+  background: #fff;
+  height: 1072px;
+  border-radius: 5;
+  border-radius: 63%;
+  margin-top: 109px;
+}
+.hero-banner .hero-content-img .hero-content-border img {
+  position: absolute;
+  bottom: 26%;
+}
+.hero-banner .product-content-wrapper {
+  background-color: #121111;
+  width: 429px;
+  padding: 16px;
+  position: absolute;
+  bottom: 200px;
+  right: 56px;
+}
+.hero-banner .product-content-wrapper .product-content-bg {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 15px 15px;
+}
+
+.categories {
+  margin: 120px 0;
+}
+.categories .categories-title {
+  text-align: center;
+}
+.categories .categories-title h2 {
+  font-size: 48px;
+  font-family: "Italiana", serif;
+  margin-bottom: 35px;
+}
+.categories .categories-title p {
+  width: 632px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.categories .category-img {
+  position: relative;
+}
+.categories .category-img button {
+  width: 176px;
+  height: 70px;
+  position: absolute;
+  left: 63px;
+  bottom: 40px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 24px;
+  color: #121111;
+}
+.categories .category-img .category-content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-color: #121111;
+  top: -9px;
+  left: -15px;
+  margin: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.categories .category-img .category-content h5 {
+  color: #ffffff;
+  padding: 187px 105px;
+}
+.categories .category-img:hover .category-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.announcement-bar {
+  margin-bottom: 195px;
+}
+.announcement-bar .announcement-heading {
+  background-color: #121111;
+  height: 80px;
+  padding: 27px 0;
+  color: #ffffff;
+}
+.announcement-bar .announcement-heading .announcement-slider span::after {
+  width: 40px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 24px;
+}
+.announcement-bar .announcement-heading .announcement-slider span::before {
+  width: 40px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  top: 12px;
+  right: 48px;
+}
+.announcement-bar .announcement-heading .announcement-slider span {
+  margin-left: 80px;
+}
+
+.home-page-about {
+  background-color: #f6f6f6;
+  margin-bottom: 195px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.home-page-about .home-about-img {
+  position: relative;
+}
+.home-page-about .home-about-img img {
+  position: absolute;
+  top: -75px;
+}
+.home-page-about .home-about-content {
+  padding: 118px 0;
+}
+.home-page-about .home-about-content h2 {
+  font-size: 60px;
+  font-family: "Italiana", serif;
+  margin-bottom: 40px;
+}
+.home-page-about .home-about-content p {
+  font-size: 18px;
+  color: #121111;
+}
+.home-page-about .home-about-side-img {
+  position: absolute;
+  right: 70px;
+  bottom: 0;
 }
 
 .banner {
