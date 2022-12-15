@@ -191,10 +191,7 @@
       }
     }
   }
-  @media screen and (max-width: 991px) {
-    display: none;
-  }
-  #solid-bar {
+  #side-bar {
     @media screen and (max-width: 1025px) {
       display: none;
     }

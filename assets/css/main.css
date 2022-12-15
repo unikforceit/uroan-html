@@ -663,9 +663,6 @@ img {
   margin-top: 30px;
 }
 
-.blog-section {
-  padding: 120px 0;
-}
 .blog-section .blog-box {
   background-color: #f6f6f6;
   text-align: center;
@@ -1398,13 +1395,8 @@ body {
 .header-right ul a i:hover {
   color: #f36a07;
 }
-@media screen and (max-width: 991px) {
-  .header-right {
-    display: none;
-  }
-}
 @media screen and (max-width: 1025px) {
-  .header-right #solid-bar {
+  .header-right #side-bar {
     display: none;
   }
 }
@@ -2454,21 +2446,46 @@ body {
 .main-footer .footer-wrapper .footer-widget .footer-about .social-icon ul .icon-hover:hover {
   color: #f36a07;
 }
+@media screen and (max-width: 570px) {
+  .main-footer .footer-wrapper .footer-widget .footer-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+}
 .main-footer .footer-wrapper .contact-footer .footer-heading {
   font-weight: 400;
   font-size: 20px;
   color: #121111;
 }
-.main-footer .footer-wrapper .contact-footer li {
+.main-footer .footer-wrapper .contact-footer ul li {
   margin-bottom: 5px;
 }
-.main-footer .footer-wrapper .contact-footer li a {
+.main-footer .footer-wrapper .contact-footer ul li a {
   text-decoration: none;
   font-weight: 300;
   color: #74787c;
 }
-.main-footer .footer-wrapper .contact-footer li a:hover {
+.main-footer .footer-wrapper .contact-footer ul li a:hover {
   color: #f36a07;
+}
+@media screen and (max-width: 570px) {
+  .main-footer .footer-wrapper .contact-footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main-footer .footer-wrapper .contact-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .footer-bottom {
