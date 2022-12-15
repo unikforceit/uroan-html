@@ -114,8 +114,14 @@
 .footer-bottom {
   padding-top: 46px;
   border-top: 1px solid #efefef;
+  .payment-icon{
+       @include media ("<=tablet"){
+        text-align: center;
+        margin-bottom: 40px;
+       }
+  }
   .footer-base-link {
-    ul {
+      ul {
       display: flex;
       justify-content: end;
       column-gap: 40px;
@@ -127,6 +133,11 @@
           color: $secondary_color;
         }
       }
+    }
+    @include media ("<=tablet"){
+      display: flex;
+    justify-content: center;
+    align-items: center;
     }
   }
 }

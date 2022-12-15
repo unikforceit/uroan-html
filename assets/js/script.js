@@ -47,10 +47,10 @@ Last change:    00/00/00
       },
       MobileMenu: function () {
         jQuery(window).on("scroll", function () {
-          if (jQuery(window).scrollTop() > 250) {
-            jQuery(".main-header").addClass("sticky-on");
+          if (jQuery(window).scrollTop() > 100) {
+            jQuery(".default-header-section").addClass("sticky-on");
           } else {
-            jQuery(".main-header").removeClass("sticky-on");
+            jQuery(".default-header-section").removeClass("sticky-on");
           }
         });
         $(".open_mobile_menu").on("click", function () {

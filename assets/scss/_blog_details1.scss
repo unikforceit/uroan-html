@@ -102,8 +102,14 @@
         margin-bottom: 40px;
       }
       .author-box {
+        display: flex;
         column-gap: 30px;
+        flex-wrap: wrap;
+        .author-img{
+            flex: 0 0 25%;
+        }
         .author-text {
+          flex: 0 0 65%;
           h4 {
             font-size: 24px;
           }
@@ -122,6 +128,9 @@
               }
             }
           }
+        }
+        @include media("<=tablet"){
+          column-gap: 20px;
         }
       }
     }
@@ -143,7 +152,9 @@
         column-gap: 30px;
         margin-top: 40px;
         display: flex;
+        flex-wrap: wrap;
         .comment-text {
+          flex: 0 0 65%;
           position: relative;
           h4 {
             margin-bottom: 15px;
@@ -173,13 +184,13 @@
           }
         }
         .comment-author {
-          flex: 0 0 100px;
+          flex: 0 0 12%;
+          img{
+            flex: 0 0 100px;
+          }
         }
       }
-      @media screen and (max-width: 991px) {
-        padding: 0 30px;
-      }
-    }
+         }
   }
   .customer-review {
     margin-top: 60px;
@@ -219,10 +230,7 @@
         }
       }
     }
-    @media screen and (max-width: 991px) {
-      padding: 0 30px;
     }
-  }
   .sidebar {
     padding-left: 35px;
 
@@ -274,6 +282,18 @@
       margin-bottom: 15px;
       .widget-img {
         flex: 0 0 90px;
+        a{
+          display: block;
+          overflow: hidden;
+          img{
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover{
+            img{
+              transform: scale(1.1);
+            }
+          }
+        }
       }
     }
     &.widget-post {
@@ -289,10 +309,10 @@
         color: $primary_black;
       }
     }
-    @media screen and (max-width: 991px) {
-      padding: 35px;
+    @include media ("<992px"){
+      padding: 50px 0 0;
     }
-  }
+    }
   .widget-button {
     margin-top: 51px;
     display: flex;
@@ -319,5 +339,26 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    li{
+      a{
+        display: block;
+        overflow: hidden;
+        img{
+          transition: all 0.3s ease-in-out;
+          
+        }
+        &:hover{
+         img{
+          transform: scale(1.1);
+          } 
+        }
+      }
+    }    
+    
+  }
+  .container{
+    @include media ("<992px"){
+      padding: 0 30px;
+    }
   }
 }
