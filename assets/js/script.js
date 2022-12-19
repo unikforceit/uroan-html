@@ -20,6 +20,7 @@ Last change:    00/00/00
         // this.Animation();
         this.NiceNumber();
         this.SidebarMenu();
+        this.LimitedSlider();
         // this.Niceselect();
       },
       preloader: function () {
@@ -102,50 +103,14 @@ Last change:    00/00/00
         //     $('select').niceSelect();
         // });
       },
-      Tgllery: function () {
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 10,
+      LimitedSlider: function () {
+        var swiperPartnarSlider = new Swiper("#limite-slider", {
           slidesPerView: 4,
-          freeMode: true,
-          watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-          spaceBetween: 10,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          thumbs: {
-            swiper: swiper,
-          },
-        });
-      },
-      PartnarSlider: function () {
-        var swiperPartnarSlider = new Swiper(".partnarSlider", {
-          slidesPerView: 2,
           loop: true,
           autoplay: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            345: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            525: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            992: {
-              slidesPerView: 4,
-              spaceBetween: 40,
-            },
+          navigation: {
+            nextEl: ".uroan-button-next",
+            prevEl: ".uroan-button-prev",
           },
         });
       },
@@ -155,36 +120,6 @@ Last change:    00/00/00
       Niceselect: function () {
         $(document).ready(function () {
           $("select").niceSelect();
-        });
-      },
-      RelatedProductS: function () {
-        var swipergrid = new Swiper(".relatedProductSlide", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          loop: true,
-          autoplay: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            345: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            525: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            992: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-          },
         });
       },
       Counter: function () {
