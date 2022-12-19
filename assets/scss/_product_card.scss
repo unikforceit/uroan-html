@@ -27,26 +27,42 @@
       width: 100%;
       transition: all 0.3s ease-in-out;
       transform: translateY(50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .product-action-btn {
-        position: absolute;
-        top: 44%;
-        left: 33%;
-        background-color: $text_white;
-        width: 124px;
-        height: 27px;
+        background-color: #ffffff;
+        width: 175px;
+        height: 47px;
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: 20px;
+
         button {
+          position: relative;
           border: none;
           background-color: transparent;
+          &::after {
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            top: 8%;
+            content: "";
+            background-color: #e1e1e1;
+            left: 36px;
+          }
+          &:last-child {
+            &::after {
+              content: none;
+            }
+          }
         }
       }
     }
   }
 
-  &:hover  {
+  &:hover {
     .tag {
       background-color: $secondary_color;
       color: $text_white;
