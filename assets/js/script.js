@@ -21,6 +21,10 @@ Last change:    00/00/00
         this.NiceNumber();
         this.SidebarMenu();
         this.LimitedSlider();
+        this.testimonialslide();
+        this.instagramslide();
+        this.logoslide();
+        this.categoriesslide();
         // this.Niceselect();
       },
       preloader: function () {
@@ -104,13 +108,116 @@ Last change:    00/00/00
         // });
       },
       LimitedSlider: function () {
-        var swiperPartnarSlider = new Swiper("#limite-slider", {
+        var LimitedSlider = new Swiper("#limite-slider", {
           slidesPerView: 4,
           loop: true,
           autoplay: true,
           navigation: {
             nextEl: ".uroan-button-next",
             prevEl: ".uroan-button-prev",
+          },
+          breakpoints: {
+            360: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          },
+        });
+      },
+      testimonialslide: function () {
+        var testimonialslide = new Swiper("#testimonial-slide", {
+          slidesPerView: 1,
+          loop: true,
+          autoplay: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      },
+      instagramslide: function () {
+        var swiperinsta = new Swiper(".instagram-slide", {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: true,
+          breakpoints: {
+            360: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          },
+        });
+      },
+      logoslide: function () {
+        var swiperlogo = new Swiper(".logo-slide", {
+          slidesPerView: 5,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: true,
+          breakpoints: {
+            360: {
+              slidesPerView: 2,
+            },
+            520: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            767: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          },
+        });
+      },
+      categoriesslide: function () {
+        var swipercate = new Swiper(".categories-slide", {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: true,
+          breakpoints: {
+            360: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
           },
         });
       },

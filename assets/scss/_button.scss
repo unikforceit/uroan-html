@@ -3,16 +3,15 @@
   min-width: 160px;
   color: $text_white;
   background-color: $primary_black;
-  display: block;
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   border: 1px solid transparent;
-  &:hover{
+  &:hover {
     color: $primary_black;
     background-color: transparent;
     border: 1px solid $primary_black;
-
   }
 }
