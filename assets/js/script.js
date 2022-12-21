@@ -151,7 +151,7 @@ Last change:    00/00/00
       instagramslide: function () {
         var swiperinsta = new Swiper(".instagram-slide", {
           slidesPerView: 3,
-          spaceBetween: 6 0,
+          spaceBetween: 60,
           centeredSlides: true,
           loop: true,
           autoplay: true,
