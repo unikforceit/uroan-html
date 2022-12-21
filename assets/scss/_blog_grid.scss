@@ -1,8 +1,6 @@
-
 .blog-section {
   .blog-grid {
     position: relative;
-    margin-bottom: 60px;
     .box-img {
       .blog-date {
         position: absolute;
@@ -54,6 +52,7 @@
   }
 }
 .pagination-wrapper {
+  padding-top: 60px;
   .pagination {
     column-gap: 15px;
     .page-item {

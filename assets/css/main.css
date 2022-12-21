@@ -64,6 +64,16 @@ img {
   }
 }
 
+.section-title h3 {
+  font-size: 48px;
+  font-family: "Italiana", serif;
+  color: #121111;
+}
+.section-title p {
+  max-width: 632px;
+  margin: 0 auto;
+}
+
 .preloader {
   background-color: #3d3d3d;
   width: 100%;
@@ -428,6 +438,36 @@ img {
 }
 .team .team-member .team-member-name {
   margin-top: 30px;
+}
+
+.testimonial-about {
+  background-image: url(/assets/img/testimonial-about-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 282px;
+  padding-bottom: 120px;
+}
+.testimonial-about .testimonial-content {
+  text-align: center;
+}
+.testimonial-about .testimonial-content h5 {
+  font-family: "Italiana", serif;
+  max-width: 1006px;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.testimonial-about .testimonial-content-btn button {
+  padding: 17px 35px;
+}
+.testimonial-about .testimonial-content-client {
+  text-align: center;
+}
+.testimonial-about .testimonial-content-client span {
+  color: #f36a07;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .latest-blog {
@@ -1104,27 +1144,20 @@ body {
   }
 }
 
-.categories {
-  margin: 120px 0;
-}
 .categories .categories-title {
   text-align: center;
 }
-.categories .categories-title h2 {
-  font-size: 48px;
-  font-family: "Italiana", serif;
+.categories .categories-title h3 {
   margin-bottom: 35px;
 }
-.categories .categories-title p {
-  max-width: 632px;
-  margin: 0 auto;
-  padding-bottom: 60px;
+.categories .categories-slide {
+  padding-top: 60px;
 }
-.categories .category-img {
+.categories .categories-slide .category-img {
   overflow: hidden;
   position: relative;
 }
-.categories .category-img button {
+.categories .categories-slide .category-img button {
   width: 176px;
   height: 70px;
   position: absolute;
@@ -1136,7 +1169,7 @@ body {
   color: #121111;
   transform: translateX(-50%);
 }
-.categories .category-img .category-content {
+.categories .categories-slide .category-img .category-content {
   position: absolute;
   width: 90%;
   height: 90%;
@@ -1151,30 +1184,27 @@ body {
   justify-content: center;
   align-items: center;
 }
-.categories .category-img .category-content h5 {
+.categories .categories-slide .category-img .category-content h5 {
   color: #ffffff;
   padding: 187px 105px;
 }
-.categories .category-img .category-content h5 a {
+.categories .categories-slide .category-img .category-content h5 a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
-.categories .category-img .category-content h5 a:hover {
+.categories .categories-slide .category-img .category-content h5 a:hover {
   color: #f36a07;
 }
-.categories .category-img:hover button {
+.categories .categories-slide .category-img:hover button {
   display: none;
 }
-.categories .category-img:hover .category-content {
+.categories .categories-slide .category-img:hover .category-content {
   opacity: 0.7;
   visibility: visible;
 }
 
-.announcement-bar {
-  margin-bottom: 195px;
-}
 .announcement-bar .announcement-heading {
   background-color: #121111;
   height: 80px;
@@ -1201,42 +1231,33 @@ body {
 }
 
 .home-page-about {
-  background-color: #f6f6f6;
-  margin-bottom: 195px;
-  height: 500px;
-  width: 100%;
   position: relative;
 }
-.home-page-about .home-about-img {
-  position: relative;
-}
-.home-page-about .home-about-img img {
+.home-page-about::before {
   position: absolute;
-  top: -75px;
-}
-@media (max-width: 991px) {
-  .home-page-about .home-about-img img {
-    position: inherit;
-  }
-}
-@media (max-width: 991px) {
-  .home-page-about .home-about-img {
-    position: inherit;
-  }
+  content: "";
+  background-color: #f6f6f6;
+  top: calc(50% - 250px);
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
 }
 .home-page-about .home-about-content {
   padding: 118px 0;
 }
-.home-page-about .home-about-content h2 {
+.home-page-about .home-about-content h3 {
   font-size: 60px;
-  font-family: "Italiana", serif;
   margin-bottom: 40px;
 }
 .home-page-about .home-about-content p {
   font-size: 18px;
   color: #121111;
 }
-@media (max-width: 1750px) {
+.home-page-about .home-about-content button {
+  margin-top: 50px;
+}
+@media (max-width: 991px) {
   .home-page-about .home-about-content {
     padding: 0;
   }
@@ -1248,8 +1269,8 @@ body {
 }
 .home-page-about .home-about-side-img {
   position: absolute;
-  right: 70px;
-  bottom: 0;
+  right: 80px;
+  bottom: 160px;
 }
 @media (max-width: 1750px) {
   .home-page-about .home-about-side-img {
@@ -1267,26 +1288,29 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .home-page-about::before {
+    content: none;
+  }
+}
 
 .about-product-details {
   margin-bottom: 120px;
 }
 .about-product-details .uroan-slider-arrow {
   display: flex;
-  flex-direction: row-reverse;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  justify-content: space-between;
   margin-bottom: 60px;
-  margin-right: 29px;
 }
-.about-product-details .uroan-slider-arrow i {
+.about-product-details .uroan-slider-arrow .arrow-btn {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.about-product-details .uroan-slider-arrow .arrow-btn i {
   font-size: 20px;
   color: #121111;
-}
-.about-product-details .related-products h3 {
-  font-size: 48px;
-  font-family: "Italiana", serif;
-  margin-bottom: 60px;
 }
 @media (max-width: 991px) {
   .about-product-details .related-products h3 {
@@ -1302,15 +1326,15 @@ body {
 
 .latest-collection {
   background-color: #121111;
-  padding: 60px;
+  padding: 60px 0;
 }
 .latest-collection .latest-collection-wrapper {
   background-color: #242424;
   padding: 120px;
+  margin: 0 60px;
 }
 .latest-collection .latest-collection-wrapper .latest-collection-content-wrapper .latest-collection-text h3 {
   font-size: 60px;
-  font-family: "Italiana", serif;
   color: #ffffff;
   margin-bottom: 60px;
 }
@@ -1411,15 +1435,11 @@ body {
   color: #121111;
 }
 
-.product-collection {
-  margin: 120px 0;
-}
-.product-collection .related-products h3 {
-  margin-bottom: 60px;
+.product-collection .section-title {
   text-align: center;
-  font-size: 48px;
-  color: #121111;
-  font-family: "Italiana", serif;
+}
+.product-collection .related-products {
+  padding-top: 60px;
 }
 .product-collection .product-item {
   margin-bottom: 34px;
@@ -1443,19 +1463,13 @@ body {
     display: none;
   }
 }
-.testimonial .testimonial-wrapper {
-  padding: 120px 0;
-}
-.testimonial .testimonial-wrapper .testimonial-text span {
+.testimonial .testimonial-wrapper .textmoniali-title span {
   display: block;
   font-size: 14px;
   color: #ffffff;
   margin-bottom: 30px;
 }
-.testimonial .testimonial-wrapper .testimonial-text span:last-child {
-  text-transform: uppercase;
-}
-.testimonial .testimonial-wrapper .testimonial-text h3 {
+.testimonial .testimonial-wrapper .textmoniali-title h3 {
   font-size: 48px;
   color: #ffffff;
   margin-bottom: 55px;
@@ -1479,6 +1493,12 @@ body {
 }
 .testimonial .testimonial-wrapper .testimonial-text h5 a:hover {
   color: #f36a07;
+}
+.testimonial .testimonial-wrapper .testimonial-text span {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 .testimonial .testimonial-wrapper .swiper-pagination {
   text-align: left;
@@ -1510,33 +1530,14 @@ body {
   }
 }
 
-.instagram-section {
-  margin-top: 140px;
-  margin-bottom: 120px;
-}
-.instagram-section .instagram-heading h3 {
-  font-family: "Italiana", serif;
+.instagram-section .instagram-heading {
   text-align: center;
-  font-size: 48px;
-  margin-bottom: 60px;
 }
-.instagram-section .instagram-img-wrapper {
-  overflow: hidden;
-  position: relative;
-}
-.instagram-section .instagram-img-wrapper a {
-  display: block;
-  overflow: hidden;
-}
-.instagram-section .instagram-img-wrapper a img {
-  size: 50%;
-  transition: all 0.3s ease-in-out;
-}
-.instagram-section .instagram-img-wrapper .instagram-img-hover {
+.instagram-section .swiper-slide .instagram-img-hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #121111;
+  background-color: rgba(18, 17, 17, 0.5568627451);
   top: 0;
   left: 0;
   opacity: 0;
@@ -1544,14 +1545,17 @@ body {
   transition: all 0.3s ease-in-out;
   transform: translateY(50%);
 }
-.instagram-section .instagram-img-wrapper .instagram-img-hover .instagram-img-hover-icon {
+.instagram-section .swiper-slide .instagram-img-hover .instagram-img-hover-icon {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.instagram-section .instagram-img-wrapper .instagram-img-hover .instagram-img-hover-icon i {
+.instagram-section .swiper-slide .instagram-img-hover .instagram-img-hover-icon a {
+  text-decoration: none;
+}
+.instagram-section .swiper-slide .instagram-img-hover .instagram-img-hover-icon a i {
   display: block;
   width: 50px;
   height: 50px;
@@ -1562,18 +1566,25 @@ body {
   align-items: center;
   background-color: #ffffff;
 }
-.instagram-section .instagram-img-wrapper:hover img {
-  size: 100%;
+.instagram-section .swiper-slide.swiper-slide-active {
   transform: scale(1.5);
 }
-.instagram-section .instagram-img-wrapper:hover .instagram-img-hover {
-  opacity: 0.7;
+.instagram-section .swiper-slide.swiper-slide-active .instagram-img-hover {
+  opacity: 1;
   visibility: visible;
+  transition: all 0.3s ease-in-out;
   transform: translateY(0);
+}
+.instagram-section .instagram-slide {
+  padding-top: 102px;
+}
+.instagram-section .instagram-slide .instagram-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.8);
 }
 
 .logo-brands {
-  margin-bottom: 120px;
   padding-bottom: 123px;
   border-bottom: 1px solid #ebebeb;
 }
@@ -1584,21 +1595,18 @@ body {
   flex-wrap: wrap;
 }
 
-.home-blog {
-  margin-bottom: 60px;
-}
-.home-blog .home-blog-heading {
+.home-blog .section-title {
   text-align: center;
 }
-.home-blog .home-blog-heading h3 {
+.home-blog .section-title h3 {
   margin-bottom: 35px;
-  font-size: 48px;
-  font-family: "Italiana", serif;
 }
-.home-blog .home-blog-heading p {
+.home-blog .section-title p {
   max-width: 632px;
   margin: 0 auto;
-  margin-bottom: 60px;
+}
+.home-blog .home-blog-content {
+  padding-top: 60px;
 }
 
 .banner {
@@ -2434,7 +2442,6 @@ body {
 
 .blog-section .blog-grid {
   position: relative;
-  margin-bottom: 60px;
 }
 .blog-section .blog-grid .box-img .blog-date {
   position: absolute;
@@ -2481,6 +2488,9 @@ body {
   color: #f36a07;
 }
 
+.pagination-wrapper {
+  padding-top: 60px;
+}
 .pagination-wrapper .pagination {
   -moz-column-gap: 15px;
        column-gap: 15px;

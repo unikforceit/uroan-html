@@ -136,6 +136,38 @@
     }
   }
 }
+// testimonial-about
+.testimonial-about {
+  background-image: url(/assets/img/testimonial-about-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 282px;
+  padding-bottom: 120px;
+  .testimonial-content {
+    text-align: center;
+    h5 {
+      font-family: $secondary_font;
+      max-width: 1006px;
+      font-size: 40px;
+      text-transform: uppercase;
+      margin: 0 auto;
+    }
+  }
+  .testimonial-content-btn {
+    button {
+      padding: 17px 35px;
+    }
+  }
+  .testimonial-content-client {
+    text-align: center;
+    span {
+      color: $secondary_color;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
 // latest-blog
 .latest-blog {
   margin-bottom: 120px;

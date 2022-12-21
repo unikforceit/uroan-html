@@ -28,7 +28,6 @@ a {
 }
 .container {
   max-width: 1320px;
- 
 }
 img {
   max-width: 100%;
@@ -43,6 +42,22 @@ img {
   }
   @media screen and (max-width: 575px) {
     padding: 50px 0;
+  }
+}
+.section-title {
+  // span {
+  //   font-weight: 300;
+  //   font-size: 14px;
+  //   font-family: primary_font;
+  // }
+  h3 {
+    font-size: 48px;
+    font-family: $secondary_font;
+    color: $primary_black;
+  }
+  p {
+    max-width: 632px;
+    margin: 0 auto;
   }
 }
 

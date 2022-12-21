@@ -24,6 +24,8 @@ Last change:    00/00/00
         this.testimonialslide();
         this.instagramslide();
         this.logoslide();
+        this.features();
+        this.testimonialabout();
         this.categoriesslide();
         // this.Niceselect();
       },
@@ -148,8 +150,9 @@ Last change:    00/00/00
       },
       instagramslide: function () {
         var swiperinsta = new Swiper(".instagram-slide", {
-          slidesPerView: 4,
-          spaceBetween: 10,
+          slidesPerView: 3,
+          spaceBetween: 6 0,
+          centeredSlides: true,
           loop: true,
           autoplay: true,
           breakpoints: {
@@ -165,7 +168,7 @@ Last change:    00/00/00
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 20,
             },
           },
@@ -217,6 +220,53 @@ Last change:    00/00/00
             1024: {
               slidesPerView: 4,
               spaceBetween: 20,
+            },
+          },
+        });
+      },
+      features: function () {
+        var swiperfea = new Swiper(".features", {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: true,
+          breakpoints: {
+            360: {
+              slidesPerView: 2,
+            },
+            520: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            767: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          },
+        });
+      },
+      testimonialabout: function () {
+        var swiperabout = new Swiper(".testimonial-about", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: true,
+          breakpoints: {
+            360: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 1,
+            },
+            767: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 1,
             },
           },
         });
