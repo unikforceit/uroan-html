@@ -1297,31 +1297,21 @@ body {
 .about-product-details {
   margin-bottom: 120px;
 }
+.about-product-details #limite-slider {
+  padding-top: 78px;
+  margin-top: -30px;
+}
 .about-product-details .uroan-slider-arrow {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-.about-product-details .uroan-slider-arrow .arrow-btn {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-.about-product-details .uroan-slider-arrow .arrow-btn i {
+.about-product-details .uroan-slider-arrow i {
   font-size: 20px;
   color: #121111;
-}
-@media (max-width: 991px) {
-  .about-product-details .related-products h3 {
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .about-product-details .related-products h3 {
-    padding-top: 30px;
-    text-align: center;
-  }
 }
 
 .latest-collection {
