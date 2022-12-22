@@ -54,6 +54,11 @@ img {
     font-size: 48px;
     font-family: $secondary_font;
     color: $primary_black;
+    @include media("<=mddevice") {
+      font: {
+        size: 30px;
+      }
+    }
   }
   p {
     max-width: 632px;

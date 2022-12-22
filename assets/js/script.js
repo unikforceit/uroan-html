@@ -26,6 +26,7 @@ Last change:    00/00/00
         this.logoslide();
         this.features();
         this.testimonialabout();
+        this.heroslide();
         this.categoriesslide();
         // this.Niceselect();
       },
@@ -271,6 +272,32 @@ Last change:    00/00/00
           },
         });
       },
+      heroslide: function () {
+        var swiperhero = new Swiper(".hero-slide", {
+          slidesPerView: 1,
+          loop: true,
+          autoplay: true,
+          direction: "vertical",
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            360: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 1,
+            },
+            767: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 1,
+            },
+          },
+        });
+      }, 
       NiceNumber: function () {
         $('input[type="number"]').niceNumber();
       },

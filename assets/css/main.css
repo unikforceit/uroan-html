@@ -69,6 +69,11 @@ img {
   font-family: "Italiana", serif;
   color: #121111;
 }
+@media (max-width: 991px) {
+  .section-title h3 {
+    font-size: 30px;
+  }
+}
 .section-title p {
   max-width: 632px;
   margin: 0 auto;
@@ -1039,6 +1044,8 @@ body {
 }
 .hero-banner .hero-content {
   padding: 238px 0;
+  max-width: 675px;
+  margin: 0 auto;
 }
 .hero-banner .hero-content span {
   font-size: 20px;
@@ -1047,14 +1054,21 @@ body {
   display: inline-block;
 }
 .hero-banner .hero-content h1 {
-  width: 675px;
   font-size: 100px;
   font-family: "Italiana", serif;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .hero-banner .hero-content h1 {
+    font-size: 50px;
+    font-family: "Italiana", serif;
+    max-width: 675px;
+    margin: 0 auto 50px;
+  }
+}
 @media (max-width: 991px) {
   .hero-banner .hero-content h1 {
-    font-size: 100px;
+    font-size: 80px;
     font-family: "Italiana", serif;
     max-width: 675px;
     margin: 0 auto 50px;
@@ -1064,6 +1078,11 @@ body {
   .hero-banner .hero-content {
     padding: 80px 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1167px) {
+  .hero-banner .hero-content {
+    padding: 178px 0;
   }
 }
 .hero-banner .hero-content-img {
