@@ -274,29 +274,24 @@ Last change:    00/00/00
       },
       heroslide: function () {
         var swiperhero = new Swiper(".hero-slide", {
+          direction: 'vertical',
+          effect: 'slide',
           slidesPerView: 1,
-          loop: true,
-          autoplay: true,
-          direction: "vertical",
+          // loop: true,
+          // autoplay: {
+          //     delay: 4000,
+          //     reverseDirection: true,
+          //     disableOnInteraction: false,
+          // },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
-          breakpoints: {
-            360: {
-              slidesPerView: 1,
-            },
-            520: {
-              slidesPerView: 1,
-            },
-            767: {
-              slidesPerView: 1,
-            },
-            1024: {
-              slidesPerView: 1,
-            },
+          navigation: {
+            nextEl: ".uroan-button-next",
+            prevEl: ".uroan-button-prev",
           },
-        });
+          });
       }, 
       NiceNumber: function () {
         $('input[type="number"]').niceNumber();
