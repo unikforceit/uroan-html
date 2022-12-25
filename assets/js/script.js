@@ -253,9 +253,16 @@ Last change:    00/00/00
       testimonialabout: function () {
         var swiperabout = new Swiper(".testimonial-about", {
           slidesPerView: 1,
-          spaceBetween: 10,
           loop: true,
-          autoplay: true,
+          // autoplay: {
+          //   delay: 2000,
+          //   reverseDirection: true,
+          //   disableOnInteraction: false,
+          // },
+          navigation: {
+            nextEl: ".uroan-button-next",
+            prevEl: ".uroan-button-prev",
+          },
           breakpoints: {
             360: {
               slidesPerView: 1,
@@ -274,15 +281,15 @@ Last change:    00/00/00
       },
       heroslide: function () {
         var swiperhero = new Swiper(".hero-slide", {
-          direction: 'vertical',
-          effect: 'slide',
+          direction: "vertical",
+          effect: "slide",
           slidesPerView: 1,
-          // loop: true,
-          // autoplay: {
-          //     delay: 4000,
-          //     reverseDirection: true,
-          //     disableOnInteraction: false,
-          // },
+          loop: true,
+          autoplay: {
+            delay: 2000,
+            reverseDirection: true,
+            disableOnInteraction: false,
+          },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -291,8 +298,8 @@ Last change:    00/00/00
             nextEl: ".uroan-button-next",
             prevEl: ".uroan-button-prev",
           },
-          });
-      }, 
+        });
+      },
       NiceNumber: function () {
         $('input[type="number"]').niceNumber();
       },

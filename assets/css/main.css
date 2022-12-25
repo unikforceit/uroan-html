@@ -463,16 +463,27 @@ img {
   text-transform: uppercase;
   margin: 0 auto;
 }
-.testimonial-about .testimonial-content-btn button {
-  padding: 17px 35px;
-}
 .testimonial-about .testimonial-content-client {
   text-align: center;
 }
 .testimonial-about .testimonial-content-client span {
+  display: block;
   color: #f36a07;
   font-weight: 500;
   text-transform: uppercase;
+  margin-top: 50px;
+}
+.testimonial-about .arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 200px;
+  z-index: 8;
+}
+.testimonial-about .arrow i {
+  font-size: 40px;
+  color: #121111;
 }
 
 .latest-blog {

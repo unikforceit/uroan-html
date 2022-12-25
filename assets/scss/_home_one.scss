@@ -6,28 +6,28 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  .hero-slide{
+  .hero-slide {
     max-height: 100vh;
-    .swiper-pagination{
-           max-width: 40px;
-           right: -18px;
-            &-bullet{
-            width: 22px;
-            margin: 12px auto;
-            height: 2px;
-            background-color: $primary_black;
+    .swiper-pagination {
+      max-width: 40px;
+      right: -18px;
+      &-bullet {
+        width: 22px;
+        margin: 12px auto;
+        height: 2px;
+        background-color: $primary_black;
         opacity: 0.2;
-      &-active{
-        width:  40px;
-        opacity: 1;
-        height: 1px;
-       }
-     }
-     @include media ("<=1560px"){
-      display: none;
-     };
+        &-active {
+          width: 40px;
+          opacity: 1;
+          height: 1px;
+        }
+      }
+      @include media("<=1560px") {
+        display: none;
+      }
     }
-    .uroan-slider-arrow{
+    .uroan-slider-arrow {
       left: calc(4% + 40px);
       position: absolute;
       top: 43%;
@@ -35,24 +35,24 @@
       display: flex;
       flex-direction: column;
       gap: 80px;
-      .uroan-button-next{
+      .uroan-button-next {
         transform: rotate(90deg);
       }
       .uroan-button-prev {
         transform: rotate(90deg);
+      }
+      @include media("<=1560px") {
+        bottom: 0;
+        top: inherit;
+        flex-direction: row;
+        left: calc(50% - 30px);
+        gap: 40px;
+      }
     }
-    @include media("<=1560px"){
-      bottom: 0;
-      top: inherit;
-      flex-direction: row;
-      left: calc(50% - 30px);
-      gap: 40px;
-    }
-     }
   }
   .hero-content {
     padding: 238px 0;
-        span {
+    span {
       font-size: 20px;
       color: $primary_black;
       margin-bottom: 40px;
@@ -75,9 +75,8 @@
         margin: 0 auto 50px;
       }
     }
-     @media screen and (max-width: 1167px) {
+    @media screen and (max-width: 1167px) {
       padding: 178px 0;
-     
     }
     @include media("<=mddevice") {
       padding: 80px 0;
@@ -114,7 +113,6 @@
       // position: inherit;
       // border: none;
       display: none;
-
     }
   }
   .product-content-wrapper {
