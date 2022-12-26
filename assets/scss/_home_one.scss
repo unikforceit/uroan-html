@@ -329,6 +329,57 @@
 }
 
 // latest-collection
+.collection-img-side {
+  background-color: $text_white;
+  .collection-img-side-wrapper {
+    position: relative;
+    padding: 0 58px 22px;
+    span {
+      position: absolute;
+      background-color: $primary_black;
+      width: 60px;
+      height: 30px;
+      color: $text_white;
+      padding: 5px;
+      text-align: center;
+      top: 30px;
+      right: 30px;
+      @include media("<=desktop") {
+        right: 0;
+      }
+      @include media("<=mddevice") {
+        right: 30px;
+      }
+    }
+    @include media("<=mddevice") {
+      margin-top: 20px;
+    }
+  }
+  .products-content {
+    text-align: center;
+    a {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      text-decoration: none;
+      color: $secondary_color;
+      text-transform: uppercase;
+    }
+    h5 {
+      a {
+        font-size: 20px;
+        color: $primary_black;
+      }
+    }
+    .price {
+      padding-bottom: 37px;
+      ins {
+        text-decoration: none;
+        color: $primary_black;
+      }
+    }
+  }
+}
 .latest-collection {
   background-color: $primary_black;
   padding: 60px 0;
@@ -386,57 +437,7 @@
         text-align: center;
       }
     }
-    .collection-img-side {
-      background-color: $text_white;
-      .collection-img-side-wrapper {
-        position: relative;
-        padding: 0 58px 22px;
-        span {
-          position: absolute;
-          background-color: $primary_black;
-          width: 60px;
-          height: 30px;
-          color: $text_white;
-          padding: 5px;
-          text-align: center;
-          top: 30px;
-          right: 30px;
-          @include media("<=desktop") {
-            right: 0;
-          }
-          @include media("<=mddevice") {
-            right: 30px;
-          }
-        }
-        @include media("<=mddevice") {
-          margin-top: 20px;
-        }
-      }
-      .products-content {
-        text-align: center;
-        a {
-          display: block;
-          margin-bottom: 8px;
-          font-size: 12px;
-          text-decoration: none;
-          color: $secondary_color;
-          text-transform: uppercase;
-        }
-        h5 {
-          a {
-            font-size: 20px;
-            color: $primary_black;
-          }
-        }
-        .price {
-          padding-bottom: 37px;
-          ins {
-            text-decoration: none;
-            color: $primary_black;
-          }
-        }
-      }
-    }
+    
   }
 }
 // product-collection
