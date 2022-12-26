@@ -251,7 +251,7 @@ Last change:    00/00/00
         });
       },
       testimonialabout: function () {
-        var swiperabout = new Swiper(".testimonial-about", {
+        var swiperabout = new Swiper(".testimonial-slider", {
           slidesPerView: 1,
           loop: true,
           // autoplay: {

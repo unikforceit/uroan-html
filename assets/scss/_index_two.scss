@@ -1,1 +1,89 @@
+<<<<<<< HEAD
  
+=======
+.header-v2 {
+  .top-header {
+    background-color: $primary_black;
+    .header-quick-links li a {
+      font-size: 12px;
+    }
+    .login {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+  .bottom-header {
+    background-color: $text_white;
+    max-height: 105px;
+    padding: 40px 0;
+    .navigation-main-area li a {
+      color: $primary_black;
+      font-size: 16px;
+      text-transform: capitalize;
+      &:hover {
+        color: $secondary_color;
+      }
+    }
+    .header-right ul li a {
+      color: $primary_black;
+      i {
+        font-size: 18px;
+      }
+      &:hover {
+        color: $secondary_color;
+      }
+    }
+    .header-right ul li::after{
+        content: none;
+    }
+  }
+}
+// index-two-hero-banner
+.index-two-hero-banner {
+    position: relative;
+  .container {
+    max-width: 1680px;
+    .index-two-hero-banner-content-wrapper{
+        display: flex;
+        justify-content: space-between;
+        .index-two-hero-banner-content-img{
+            display: flex;
+            flex-direction: column;
+            align-self: end;
+        }
+    }
+    .banner-content-text{
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: 21%;
+        h1{
+            text-transform: uppercase;
+            font-size: 120px;
+            font-family: $secondary_font;
+            span{
+                color: $text_white;
+            }
+        }
+    }
+  }
+}
+// index-two-features
+.index-two-features {
+  padding-top: 60px;
+  .index-two-features-wappper {
+    display: flex;
+    column-gap: 20px;
+    .features-text {
+      span {
+        color: $primary_black;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// index-two-product-grid
+>>>>>>> 46c3134544ef47328e5707ea6b314b975a3c1b7a

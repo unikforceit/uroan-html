@@ -1,248 +1,210 @@
 .default-header-section {
-  background-color: $primary_black;
-
+  
   .container {
     max-width: 1680px;
   }
-}
-
-.top-header {
-  border-bottom: 1px solid $border_color;
-  max-height: 38px;
-  line-height: 38px;
-
-  .header-quick-links {
-    ul {
+  .top-header {
+    background-color: $primary_black;
+    border-bottom: 1px solid $border_color;
+    max-height: 38px;
+    line-height: 38px;
+  
+    .header-quick-links {
       display: flex;
-      column-gap: 50px;
-      flex-wrap: wrap;
-
-      li {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          content: "";
-          width: 1px;
-          background-color: $border_color;
-          height: 100%;
-          right: -25px;
-        }
-
-        &:last-child {
+        column-gap: 50px;
+        flex-wrap: wrap;
+     
+  
+        li {
+          position: relative;
+  
           &::after {
-            content: none;
+            position: absolute;
+            content: "";
+            width: 1px;
+            background-color: $border_color;
+            height: 100%;
+            right: -25px;
           }
-        }
-
-        a {
-          text-decoration: none;
-          color: $text_white;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 12px;
-
-          &:hover {
-            color: $secondary_color;
+  
+          &:last-child {
+            &::after {
+              content: none;
+            }
           }
-        }
-      }
-    }
-  }
-
-  .drop-manu {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-
-    .top-header-right {
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 50px;
-      justify-content: end;
-
-      > div {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          content: "";
-          width: 1px;
-          background-color: $border_color;
-          height: 100%;
-          right: -25px;
-        }
-
-        &:last-child {
-          &::after {
-            content: none;
+  
+          a {
+            text-decoration: none;
+            color: $text_white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+  
+            &:hover {
+              color: $secondary_color;
+            }
           }
-        }
-      }
-
-      select {
-        background-color: $primary_black;
-        border: none;
-        color: $text_white;
-
-        &:hover {
-          color: $secondary_color;
-        }
-      }
-
-      a {
-        text-decoration: none;
-        color: $text_white;
-
-        &:hover {
-          color: $secondary_color;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    display: none;
-  }
-}
-
-.bottom-header {
-  max-height: 97px;
-  padding: 33px 0;
-.header-wrap{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  .logo-col{
-    flex: 0 0 16.6666%;
-    max-width: 16.6666%;
-   
-  }
-  .menu-col{
-    flex: 0 0 58.3333%;
-    max-width: 58.3333%;
-    @include media("<=XLtablet"){
-      display: none;
-    }
-  }
-  .header-right-col{
-    flex: 0 0 25%;
-    max-width: 25%;
-    @include media("<=tablet"){
-      flex: 0 0 32.9997%;
-      max-width: 32.9997%;
-    }
-    @include media("<=510px"){
-      flex: 0 0 54.9997%;
-      max-width: 54.9997%;
-    }
-  }
-  .mobile-menu-col{
-    flex: 0 0 16.6666%;
-    max-width: 16.6666%;
-      @include media (">XLtablet","<=LGdesktop"){
-      display: none;
-    }
-    @include media ("<=tablet"){
-      flex: 8.3333%;
-      max-width: 8.3333%;
-    }
-  }
-}
-  .main-manu {
-    ul {
-      display: flex;
-      column-gap: 50px;
-      flex-wrap: wrap;
-      justify-content: center;
-    
-      li {
-        a {
-          text-decoration: none;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          color: $text_white;
-
-          &:hover {
-            color: $secondary_color;
+          select {
+            background-color: $primary_black;
+            border: none;
+            color: $text_white;
+          
+            &:hover {
+              color: $secondary_color;
+            }
           }
-        }
-      }
-     }
-  }
-}
-
-
-
-.header-right {
-  ul {
-    display: flex;
-    justify-content: end;
-    column-gap: 50px;
-    align-items: center;
-
-    li {
-      position: relative;
-
-      &::after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        background-color: $border_color;
-        height: 100%;
-        right: -25px;
-      }
-
-      &:last-child {
-        &::after {
-          content: none;
-        }
-      }
-     @include media ("<=XLtablet"){
-      &:nth-child(3){
-        &::after{
-          content: none;
         }
       }
       
-     }
+      @media screen and (max-width: 991px) {
+      display: none;
     }
-
-    a {
-      &#side-cart {
-        i {
-          padding-right: 10px;
-        }
-        span {
-          @include media("<=xldesktop") {
-            display: none;
+  }
+  
+  .bottom-header {
+    background-color: $primary_black;
+    max-height: 97px;
+    padding: 33px 0;
+  .header-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .logo-col{
+      flex: 0 0 16.6666%;
+      max-width: 16.6666%;
+     
+    }
+    .menu-col{
+      flex: 0 0 58.3333%;
+      max-width: 58.3333%;
+      @include media("<=XLtablet"){
+        display: none;
+      }
+    }
+    .header-right-col{
+      flex: 0 0 25%;
+      max-width: 25%;
+      @include media("<=tablet"){
+        flex: 0 0 32.9997%;
+        max-width: 32.9997%;
+      }
+      @include media("<=510px"){
+        flex: 0 0 54.9997%;
+        max-width: 54.9997%;
+      }
+    }
+    .mobile-menu-col{
+      flex: 0 0 16.6666%;
+      max-width: 16.6666%;
+        @include media (">XLtablet","<=LGdesktop"){
+        display: none;
+      }
+      @include media ("<=tablet"){
+        flex: 8.3333%;
+        max-width: 8.3333%;
+      }
+    }
+  }
+    .main-manu {
+      ul {
+        display: flex;
+        column-gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+        li {
+          a {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: $text_white;
+  
+            &:hover {
+              color: $secondary_color;
+            }
           }
         }
-      }
-      text-decoration: none;
-
-      span,
-      i {
-        color: $text_white;
-        text-decoration: none;
-        font-size: 18px;
-
+       }
+    }
+  }
+  
+  
+  
+  .header-right {
+    ul {
+      display: flex;
+      justify-content: end;
+      column-gap: 50px;
+      align-items: center;
+  
+      li {
+        position: relative;
+  
+        &::after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          background-color: $border_color;
+          height: 100%;
+          right: -25px;
+        }
+  
+        &:last-child {
+          &::after {
+            content: none;
+          }
+        }
+       @include media ("<=XLtablet"){
+        &:nth-child(3){
+          &::after{
+            content: none;
+          }
+        }
+       }
+       
+      a {
+        display: inline-block;
+          color: #ffff;
+  
         &:hover {
           color: $secondary_color;
         }
+        &#side-cart {
+                   i {
+            padding-right: 10px;
+          }
+          span {
+            @include media("<=xldesktop") {
+              display: none;
+            }
+          }
+        }
+        text-decoration: none;
+  
+        span
+          {
+          text-decoration: none;
+          font-size: 18px;
+  
+        }
+      }
+      }
+  
+      @include media("<=510px"){
+        column-gap: 32px;
       }
     }
-    @include media("<=510px"){
-      column-gap: 32px;
+    #solid-bar{
+     @include media("<=XLtablet"){
+      display: none;
+     }
     }
   }
-  #solid-bar{
-   @include media("<=XLtablet"){
-    display: none;
-   }
-  }
 }
+
+
+
 
 .breadcrumb {
   background-image: url("/assets/img/bgimg.png");
@@ -326,7 +288,7 @@
 
 .navigation-main-area li a {
   color: $text_white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
   text-decoration: none;
