@@ -32,6 +32,11 @@ a {
 img {
   max-width: 100%;
 }
+[data-background]{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .sec-gap {
   padding: 120px 0;
   @media screen and (max-width: 991px) {

@@ -1,13 +1,48 @@
-html::-webkit-scrollbar {
-  width: 0.8  rem;
-}
-html::-webkit-scrollbar-track {
-  background: $primary_black;
-}
-html::-webkit-scrollbar-thumb {
-  background: $secondary_color;
-}
+.header-quick-links {
+  display: flex;
+  column-gap: 50px;
+  flex-wrap: wrap;
 
+  li {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      background-color: $border_color;
+      height: 100%;
+      right: -25px;
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $text_white;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+
+      &:hover {
+        color: $secondary_color;
+      }
+    }
+    select {
+      background-color: $primary_black;
+      border: none;
+      color: $text_white;
+
+      &:hover {
+        color: $secondary_color;
+      }
+    }
+  }
+}
 .default-header-section {
   .container {
     max-width: 1680px;
@@ -18,51 +53,7 @@ html::-webkit-scrollbar-thumb {
     max-height: 38px;
     line-height: 38px;
 
-    .header-quick-links {
-      display: flex;
-      column-gap: 50px;
-      flex-wrap: wrap;
-
-      li {
-        position: relative;
-
-        &::after {
-          position: absolute;
-          content: "";
-          width: 1px;
-          background-color: $border_color;
-          height: 100%;
-          right: -25px;
-        }
-
-        &:last-child {
-          &::after {
-            content: none;
-          }
-        }
-
-        a {
-          text-decoration: none;
-          color: $text_white;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-
-          &:hover {
-            color: $secondary_color;
-          }
-        }
-        select {
-          background-color: $primary_black;
-          border: none;
-          color: $text_white;
-
-          &:hover {
-            color: $secondary_color;
-          }
-        }
-      }
-    }
+    
 
     @media screen and (max-width: 991px) {
       display: none;
@@ -799,12 +790,15 @@ html::-webkit-scrollbar-thumb {
       color: $secondary_color;
     }
   }
-
+  
   &.cart-open {
     top: 137px;
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+  }
+  .uroan-btn{
+    width: 100%;
   }
 }
 

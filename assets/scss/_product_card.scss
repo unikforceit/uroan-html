@@ -60,19 +60,20 @@
         }
       }
     }
+    &:hover {
+      .tag {
+        background-color: $secondary_color;
+        color: $text_white;
+      }
+      .product-item-action {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   }
 
-  &:hover {
-    .tag {
-      background-color: $secondary_color;
-      color: $text_white;
-    }
-    .product-item-action {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+
   .products-content {
     a {
       text-decoration: none;

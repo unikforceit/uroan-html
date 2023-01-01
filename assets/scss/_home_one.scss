@@ -322,9 +322,14 @@
     right: 0;
     column-gap: 30px;
     i {
-      transform: rotate(180deg);
       font-size: 20px;
       color: $primary_black;
+    }
+    .uroan-button-next{
+      transform: rotate(180deg);
+    }
+    .uroan-button-prev{
+      transform: rotate(180deg);
     }
   }
 }
@@ -438,6 +443,7 @@
         text-align: center;
       }
     }
+    
   }
 }
 // product-collection
