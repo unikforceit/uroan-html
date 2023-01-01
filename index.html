@@ -16,7 +16,7 @@
 
 <body>
   <!-- Preloader -->
-  <!-- <div class="preloader">
+  <div class="preloader">
     <div class="vertical-centered-box">
       <div class="content">
         <div class="loader-circle"></div>
@@ -26,53 +26,54 @@
         <img src="assets/img/logo.png" alt="">
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- Scroll -->
   <div class="scroll-top">
     <i class="fas fa-arrow-up"></i>
   </div>
   <div class="overlay"></div>
   <!-- Start header -->
-<header class="default-header-section">
-        <div class="top-header">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7">
-                   <ul class="header-quick-links">
-                  <li><a href="#">+381 2225 25 25 (9AM - 6PM EST)</a></li>
-                  <li><a href="#">Free Shipping On All U.S. Orders</a></li>
-                  <li><a href="#">Gift Cards</a></li>
-                </ul>
-              </div>
-            <div class="col-md-5">
-              <ul class="header-quick-links justify-content-end">
-               <li class="language">
-                    <select>
-                      <option value="one">EN</option>
-                      <option value="two">BN</option>
-                      <option value="three">FR</option>
-                    </select>
-               </li>
-                  <li class="currency">
-                    <select>
-                      <option value="one">USD</option>
-                      <option value="two">BDT</option>
-                      <option value="three">EUR</option>
-                    </select>
-                  </li>
-                  <li class="store">
-                    <a href="#">Strore</a>
-                  </li>
-                  <li class="Subscribe">
-                    <a href="#">Subscribe</a>
-                  </li>
-                </ul>
-            </div>
+  <header class="default-header-section">
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <ul class="header-quick-links">
+              <li><a href="#">+381 2225 25 25 (9AM - 6PM EST)</a></li>
+              <li><a href="#">Free Shipping On All U.S. Orders</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <ul class="header-quick-links justify-content-end">
+              <li class="language">
+                <select>
+                  <option value="one">EN</option>
+                  <option value="two">BN</option>
+                  <option value="three">FR</option>
+                </select>
+              </li>
+              <li class="currency">
+                <select>
+                  <option value="one">USD</option>
+                  <option value="two">BDT</option>
+                  <option value="three">EUR</option>
+                </select>
+              </li>
+              <li class="store">
+                <a href="#">Strore</a>
+              </li>
+              <li class="Subscribe">
+                <a href="#">Subscribe</a>
+              </li>
+            </ul>
           </div>
         </div>
-       </div>
-      <div class="bottom-header">
-        <div class="container"><div class="header-wrap">
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="header-wrap">
           <div class="mobile-menu-col">
             <!-- Start Mobile Menu -->
             <div class="mobile_menu">
@@ -222,7 +223,7 @@
             <div class="header-right">
               <ul>
                 <li>
-                  <a href="#"><i class="fa-regular fa-user"></i>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#user-icon"><i class="fa-regular fa-user"></i>
                   </a>
                 </li>
                 <li>
@@ -243,8 +244,8 @@
           </div>
         </div>
       </div>
-     </div>
-    </header>
+    </div>
+  </header>
   <div class="offcanvas offcanvas-end side-scroll" tabindex="-1" id="offcanvasRight"
     aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-body">
@@ -358,7 +359,34 @@
       <input type="text" placeholder="Search here....">
       <button class="uroan-btn">Search Now</button>
     </div>
-  </div> 
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="user-icon" tabindex="-1" aria-labelledby="user-icon" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">password:</label>
+              <input type="password" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" value="">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- End header -->
 
   <!-- hero-banner--section -->
@@ -400,7 +428,7 @@
                   </div>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
           <div class="swiper-slide">
             <div class="hero-wrapper">
@@ -511,7 +539,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="uroan-slider-arrow">
           <div class="swiper-pagination"></div>
           <div class="uroan-button-prev"><i class="fa-solid fa-angle-left"></i></i></div>
@@ -656,8 +684,8 @@
       </div>
       <div id="limite-slider" class="swiper">
         <div class="uroan-slider-arrow">
-          <div class="uroan-button-prev"><i class="fa-solid fa-angle-left"></i></i></div>
           <div class="uroan-button-next"><i class="fa-solid fa-angle-right"></i></i></div>
+          <div class="uroan-button-prev"><i class="fa-solid fa-angle-left"></i></i></div> 
         </div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">

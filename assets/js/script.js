@@ -27,6 +27,8 @@ Last change:    00/00/00
         this.features();
         this.testimonialabout();
         this.heroslide();
+        this.twocategories();
+        this.indexinstagram();
         this.categoriesslide();
         // this.Niceselect();
       },
@@ -254,11 +256,11 @@ Last change:    00/00/00
         var swiperabout = new Swiper(".testimonial-slider", {
           slidesPerView: 1,
           loop: true,
-          // autoplay: {
-          //   delay: 2000,
-          //   reverseDirection: true,
-          //   disableOnInteraction: false,
-          // },
+          autoplay: {
+            delay: 2000,
+            reverseDirection: true,
+            disableOnInteraction: false,
+          },
           navigation: {
             nextEl: ".uroan-button-next",
             prevEl: ".uroan-button-prev",
@@ -297,6 +299,61 @@ Last change:    00/00/00
           navigation: {
             nextEl: ".uroan-button-next",
             prevEl: ".uroan-button-prev",
+          },
+        });
+      },
+      twocategories: function () {
+        var swiperfea = new Swiper(".two-categories", {
+          slidesPerView: 5,
+          spaceBetween: 10,
+          loop: true,
+          autoplay: {
+            delay: 2000,
+            reverseDirection: true,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            360: {
+              slidesPerView: 2,
+            },
+            520: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            767: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
+          },
+        });
+      },
+      indexinstagram: function () {
+        var swiperinsta = new Swiper(".index-two-instagram", {
+          slidesPerView: 4,
+          spaceBetween: 60,
+          centeredSlides: true,
+          loop: true,
+          autoplay: true,
+          breakpoints: {
+            360: {
+              slidesPerView: 1,
+            },
+            520: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
           },
         });
       },

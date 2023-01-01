@@ -1,4 +1,14 @@
 // main-footer
+.social-icon {
+  ul {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+    .icon-hover:hover {
+      color: $secondary_color;
+    }
+  }
+}
 .main-footer {
   padding: 120px 0 40px;
   background-color: $third_color;
@@ -51,23 +61,14 @@
       padding-bottom: 80px;
       .footer-about {
         p {
-          width: 320px;
+          max-width: 320px;
           padding-top: 25px;
           font-weight: 300;
           font-size: 16px;
           font-family: $primary_font;
           color: $paragraph_color;
         }
-        .social-icon {
-          ul {
-            display: flex;
-            column-gap: 10px;
-            margin-top: 10px;
-            .icon-hover:hover {
-              color: $secondary_color;
-            }
-          }
-        }
+
         @media screen and (max-width: 570px) {
           display: flex;
           justify-content: center;
@@ -82,6 +83,7 @@
         font-weight: 400;
         font-size: 20px;
         color: $primary_black;
+        text-transform: uppercase;
       }
       ul {
         li {
@@ -114,14 +116,14 @@
 .footer-bottom {
   padding-top: 46px;
   border-top: 1px solid #efefef;
-  .payment-icon{
-       @include media ("<=tablet"){
-        text-align: center;
-        margin-bottom: 40px;
-       }
+  .payment-icon {
+    @include media("<=tablet") {
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
   .footer-base-link {
-      ul {
+    ul {
       display: flex;
       justify-content: end;
       column-gap: 40px;
@@ -134,10 +136,10 @@
         }
       }
     }
-    @include media ("<=tablet"){
+    @include media("<=tablet") {
       display: flex;
-    justify-content: center;
-    align-items: center;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

@@ -51,6 +51,7 @@ img {
     font-family: primary_font;
   }
   h3 {
+    font-family: $secondary_font;
     font-size: 48px;
     font-family: $secondary_font;
     color: $primary_black;
@@ -68,7 +69,7 @@ img {
 
 // Preloader
 .preloader {
-  background-color: $border_color;
+  background-color: $primary_black;
   width: 100%;
   height: 100%;
   position: fixed;

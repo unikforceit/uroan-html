@@ -120,8 +120,16 @@
         i {
           color: #fff;
           border: 1px solid #fff;
-          border-radius: 27px;
-          padding: 10px;
+          border-radius: 50%;
+          padding: 15px 14px;
+          width: 42.86px;
+          height: 44px;
+          font-size: 14px;
+          line-height: 14px;
+          &:hover {
+            color: $primary_black;
+            background-color: $text_white;
+          }
         }
       }
     }
@@ -138,10 +146,7 @@
 }
 // testimonial-about
 .testimonial-about {
-  background-image: url(/assets/img/testimonial-about-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $third_color;
   padding-top: 282px;
   padding-bottom: 120px;
   .testimonial-content {
@@ -180,7 +185,6 @@
 }
 // latest-blog
 .latest-blog {
-  margin-bottom: 120px;
   .blog-title {
     text-align: center;
     h5 {
