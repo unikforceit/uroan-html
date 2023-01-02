@@ -196,7 +196,7 @@ Last change:    00/00/00
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 20,
             },
           },
