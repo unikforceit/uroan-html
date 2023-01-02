@@ -3781,7 +3781,7 @@ body {
   background: rgba(255, 255, 255, 0.92);
 }
 .home-v3-best-seller #myTabContent .product-item .products-img-area .product-item-action .product-action-btn {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 13px 45px rgba(0, 0, 0, 0.09);
 }
 .home-v3-best-seller #myTabContent .product-item .products-img-area .product-item-action .product-action-btn button i:hover {
@@ -3816,6 +3816,36 @@ body {
   position: absolute;
   top: 9%;
   left: 0;
+}
+
+.home-v3-category-section .section-title {
+  text-align: center;
+}
+.home-v3-category-section .section-title h3 {
+  font-size: 40px;
+}
+.home-v3-category-section .home-v3-category-img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-v3-category-section .home-v3-category-img img:hover {
+  border-radius: 50%;
+  border: 1px solid #f36a07;
+}
+.home-v3-category-section .home-v3-category-content {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.home-v3-category-section .home-v3-category-content span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #121111;
 }
 
 /*********** Responsive CSS **************/
