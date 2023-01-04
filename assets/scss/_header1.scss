@@ -53,8 +53,6 @@
     max-height: 38px;
     line-height: 38px;
 
-    
-
     @media screen and (max-width: 991px) {
       display: none;
     }
@@ -198,10 +196,6 @@
 }
 
 .breadcrumb {
-  background-image: url("/assets/img/bgimg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 40px 0;
   margin: 0;
 }
@@ -790,14 +784,14 @@
       color: $secondary_color;
     }
   }
-  
+
   &.cart-open {
     top: 137px;
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
   }
-  .uroan-btn{
+  .uroan-btn {
     width: 100%;
   }
 }

@@ -443,3 +443,24 @@ Last change:    00/00/00
     Medi.init();
   });
 })(jQuery);
+// product-counter
+const decrementButton = document.getElementById("decrement-button");
+const incrementButton = document.getElementById("increment-button");
+const productCount = document.getElementById("product-count");
+
+decrementButton.addEventListener("click", () => {
+  let count = parseInt(productCount.value, 10);
+  count = Math.max(count - 1, 0);
+  productCount.value = count;
+});
+
+incrementButton.addEventListener("click", () => {
+  let count = parseInt(productCount.value, 10);
+  count = count + 1;
+  productCount.value = count;
+});
+const slideButton = document.getElementById("slide-button");
+const productImage = document.getElementById("product-image");
+
+let currentImageIndex = 1;
+const totalImages = 3;

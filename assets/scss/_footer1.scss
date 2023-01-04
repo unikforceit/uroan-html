@@ -135,6 +135,9 @@
           color: $secondary_color;
         }
       }
+      @include media("<=500px") {
+        column-gap: 20px;
+      }
     }
     @include media("<=tablet") {
       display: flex;

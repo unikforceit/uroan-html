@@ -877,6 +877,28 @@ img {
   background-color: transparent;
 }
 
+#product-counter {
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  max-width: 117px;
+}
+#product-counter #product-count {
+  width: 40px;
+  text-align: center;
+  border: none;
+}
+#product-counter button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 body {
   background-color: #fff;
 }
@@ -1966,10 +1988,6 @@ body {
 }
 
 .breadcrumb {
-  background-image: url("/assets/img/bgimg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 40px 0;
   margin: 0;
 }
@@ -3137,6 +3155,12 @@ body {
 .footer-bottom .footer-base-link ul a:hover {
   color: #f36a07;
 }
+@media (max-width: 500px) {
+  .footer-bottom .footer-base-link ul {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
 @media (max-width: 768px) {
   .footer-bottom .footer-base-link {
     display: flex;
@@ -3953,7 +3977,7 @@ body {
   transform: translateY(0);
 }
 .home-v3-instagram .instagram-section .instagram-slide {
-  padding: 0;
+  padding: 18px;
 }
 
 .search-area {
