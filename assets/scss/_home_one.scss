@@ -36,10 +36,10 @@
       flex-direction: column;
       gap: 80px;
       .uroan-button-next {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
       }
       .uroan-button-prev {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
       }
       @include media("<=1560px") {
         bottom: 0;
@@ -154,7 +154,7 @@
       }
     }
     @include media("<=mddevice") {
-      bottom: 100px;
+      bottom: 58px;
       right: calc(50% - 215px);
     }
   }
