@@ -163,6 +163,7 @@
   position: relative;
   .home-v3-about-img {
     text-align: center;
+   
   }
   .home-v3-about-content {
     h2 {
@@ -170,17 +171,29 @@
       font-family: $secondary_font;
       font-size: 48px;
       margin-bottom: 58px;
+      @include media ("<=mddevice"){
+        max-width: 100%;
+        margin-bottom: 25px;
+      }
     }
     a {
       margin-top: 32px;
-      display: block;
+      display: inline-block;
       max-width: 200px;
+      width: 100%;
+    }
+    @include media ("<=mddevice"){
+      text-align: center;
+      margin-top: 30px;
     }
   }
   .home-v3-side-img {
     position: absolute;
     top: 9%;
     left: 5%;
+    @include media ("<=1860px"){
+      display: none;
+    }
   }
 }
 // home-v3-category-section

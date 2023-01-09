@@ -3850,15 +3850,33 @@ body {
   font-size: 48px;
   margin-bottom: 58px;
 }
+@media (max-width: 991px) {
+  .home-v3-about-section .home-v3-about-content h2 {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+}
 .home-v3-about-section .home-v3-about-content a {
   margin-top: 32px;
-  display: block;
+  display: inline-block;
   max-width: 200px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .home-v3-about-section .home-v3-about-content {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 .home-v3-about-section .home-v3-side-img {
   position: absolute;
   top: 9%;
   left: 5%;
+}
+@media (max-width: 1860px) {
+  .home-v3-about-section .home-v3-side-img {
+    display: none;
+  }
 }
 
 .home-v3-category-section .section-title {
