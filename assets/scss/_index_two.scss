@@ -506,14 +506,14 @@
         column-gap: 15px;
         flex-wrap: wrap;
         input {
-          width: 415px;
+          min-width: 415px;
           height: 50px;
           padding: 14px 25px;
         }
         button {
           background-color: $secondary_color;
           padding: 13px 38px;
-          width: 160px;
+          min-width: 160px;
           height: 50px;
           color: $text_white;
           font-weight: 500px;

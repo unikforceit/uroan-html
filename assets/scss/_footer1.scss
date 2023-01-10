@@ -36,6 +36,11 @@
         position: absolute;
         right: 3px;
         top: 3px;
+        @include media("<=438px") {
+          position: static;
+          width: 100%;
+          margin-top: 10px;
+        }
       }
     }
     .privacy-policy {

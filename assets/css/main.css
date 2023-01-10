@@ -384,6 +384,7 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
+  @in;
 }
 .company-features .vector-content img {
   width: 62px;
@@ -3058,6 +3059,13 @@ body {
   right: 3px;
   top: 3px;
 }
+@media (max-width: 438px) {
+  .main-footer .newsletter-wraper .newsletter-form .uroan-btn {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 .main-footer .newsletter-wraper .privacy-policy {
   padding-top: 30px;
 }
@@ -3684,14 +3692,14 @@ body {
   flex-wrap: wrap;
 }
 .home-two-footer .newsletter-border .home-newsletter-wrappper .newsletter-form-btn input {
-  width: 415px;
+  min-width: 415px;
   height: 50px;
   padding: 14px 25px;
 }
 .home-two-footer .newsletter-border .home-newsletter-wrappper .newsletter-form-btn button {
   background-color: #f36a07;
   padding: 13px 38px;
-  width: 160px;
+  min-width: 160px;
   height: 50px;
   color: #ffffff;
   font-weight: 500px;
@@ -3778,6 +3786,11 @@ body {
   color: #ffffff;
   margin-bottom: 40px;
 }
+@media (max-width: 991px) {
+  .home-v3-hero-banner-wrapper {
+    padding: 0;
+  }
+}
 
 .home-v3-collection-card .home-v3-collection-content {
   padding: 254px 0px 60px 60px;
@@ -3808,6 +3821,13 @@ body {
 .home-v3-best-seller .section-title ul button.active {
   color: #f36a07;
   text-decoration: underline;
+}
+@media (max-width: 593px) {
+  .home-v3-best-seller .section-title {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .home-v3-best-seller #myTabContent {
   margin-top: 50px;
@@ -3876,6 +3896,11 @@ body {
 @media (max-width: 1860px) {
   .home-v3-about-section .home-v3-side-img {
     display: none;
+  }
+}
+@media (max-width: 1860px) {
+  .home-v3-about-section {
+    padding-left: 0;
   }
 }
 
