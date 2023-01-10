@@ -89,6 +89,7 @@
     padding: 254px 0px 60px 60px;
 
     h3 {
+      padding-top: 10px;
       font-family: $secondary_font;
       font-size: 40px;
       color: $primary_black;
@@ -302,6 +303,17 @@
       padding: 40px;
       .unique-items-content-text {
         background-color: $text_white;
+      }
+      @include media ("<=mddevice"){
+        margin: 0 auto;
+      }
+    }
+    @include media ("<=mddevice"){
+      padding-left: 0;
+    }
+    .unique-items-img{
+      @include media ("<=mddevice"){
+        margin-bottom: 20px;
       }
     }
   }

@@ -403,6 +403,11 @@ img {
 .company-features .vector-content a:hover {
   color: #f36a07;
 }
+@media (max-width: 991px) {
+  .company-features .vector-content {
+    padding: 50px 0;
+  }
+}
 
 .team {
   margin-bottom: 120px;
@@ -3783,6 +3788,7 @@ body {
   padding: 254px 0px 60px 60px;
 }
 .home-v3-collection-card .home-v3-collection-content h3 {
+  padding-top: 10px;
   font-family: "Italiana", sans-serif;
   font-size: 40px;
   color: #121111;
@@ -3979,6 +3985,21 @@ body {
 }
 .home-v3-unique-items .unique-items-wrapper .unique-items-content .unique-items-content-text {
   background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .home-v3-unique-items .unique-items-wrapper .unique-items-content {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .home-v3-unique-items .unique-items-wrapper {
+    padding-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .home-v3-unique-items .unique-items-wrapper .unique-items-img {
+    margin-bottom: 20px;
+  }
 }
 
 .home-v3-company-features {
