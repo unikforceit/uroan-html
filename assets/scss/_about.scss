@@ -1,4 +1,9 @@
 // company-history
+.about-img {
+  @include media("<=mddevice") {
+    text-align: center;
+  }
+}
 .company-history {
   h6 {
     font-size: 14px;
@@ -22,6 +27,10 @@
       margin-bottom: 34px;
     }
   }
+  @include media("<=mddevice") {
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 // video-section
 .video-section {
@@ -44,6 +53,11 @@
     button {
       margin-top: 20px;
     }
+  }
+  .mission-accordion {
+    @include media("<=mddevice"){
+      text-align: center
+    };
   }
 }
 // company-features
@@ -76,7 +90,7 @@
         color: $secondary_color;
       }
     }
-    @include Media("<=mddevice") {
+    @include media("<=mddevice") {
       padding: 50px 0;
     }
   }
