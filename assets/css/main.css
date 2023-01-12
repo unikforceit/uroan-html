@@ -334,6 +334,12 @@ img {
        column-gap: 20px;
 }
 
+@media (max-width: 991px) {
+  .about-img {
+    text-align: center;
+  }
+}
+
 .company-history h6 {
   font-size: 14px;
   color: #f36a07;
@@ -351,6 +357,12 @@ img {
 }
 .company-history .para p {
   margin-bottom: 34px;
+}
+@media (max-width: 991px) {
+  .company-history {
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 
 .video-section {
@@ -373,6 +385,11 @@ img {
 .company-values .our-mission button {
   margin-top: 20px;
 }
+@media (max-width: 991px) {
+  .company-values .mission-accordion {
+    text-align: center;
+  }
+}
 
 .company-features {
   background-color: #121111;
@@ -384,7 +401,6 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  @in;
 }
 .company-features .vector-content img {
   width: 62px;
