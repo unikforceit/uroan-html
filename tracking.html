@@ -5,100 +5,389 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uroan - login-page</title>
+  <title>Uroan - tracking-page</title>
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="vertical-centered-box">
+      <div class="content">
+        <div class="loader-circle"></div>
+        <div class="loader-line-mask">
+          <div class="loader-line"></div>
+        </div>
+        <img src="assets/img/logo.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Scroll -->
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <div class="overlay"></div>
   <!-- Start header -->
   <header class="default-header-section">
-    <div class="container">
-      <div class="top-header">
+    <div class="top-header">
+      <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <div class="header-quick-links">
-              <ul>
-                <li><a href="#">+381 2225 25 25 (9AM - 6PM EST)</a></li>
-                <li><a href="#">Free Shipping On All U.S. Orders</a></li>
-                <li><a href="#">Gift Cards</a></li>
-              </ul>
-            </div>
+            <ul class="header-quick-links">
+              <li><a href="#">+381 2225 25 25 (9AM - 6PM EST)</a></li>
+              <li><a href="#">Free Shipping On All U.S. Orders</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
           </div>
           <div class="col-md-5">
-            <div class="drop-manu">
-              <div class="row">
-                <div class="col-md-2">
-                  <div>
-                    <select>
-                      <option value="one">EN</option>
-                      <option value="two">BN</option>
-                      <option value="three">FR</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <div>
-                    <select>
-                      <option value="one">USD</option>
-                      <option value="two">BDT</option>
-                      <option value="three">EUR</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-1">
-                  <a href="#">Strore</a>
-                </div>
-                <div class="col-md-1">
-                  <a href="#">Subscribe</a>
-                </div>
-              </div>
-            </div>
+            <ul class="header-quick-links justify-content-end">
+              <li class="language">
+                <select>
+                  <option value="one">EN</option>
+                  <option value="two">BN</option>
+                  <option value="three">FR</option>
+                </select>
+              </li>
+              <li class="currency">
+                <select>
+                  <option value="one">USD</option>
+                  <option value="two">BDT</option>
+                  <option value="three">EUR</option>
+                </select>
+              </li>
+              <li class="store">
+                <a href="#">Strore</a>
+              </li>
+              <li class="Subscribe">
+                <a href="#">Subscribe</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="bottom-header">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="logo-img">
-              <img src="assets/img/logo.png" alt="logo">
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="mobile-menu-col">
+            <!-- Start Mobile Menu -->
+            <div class="mobile_menu">
+              <div class="mobile_menu_button open_mobile_menu">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="mobile_menu_wrap">
+                <div class="mobile_menu_overlay open_mobile_menu"></div>
+                <div class="mobile_menu_content">
+                  <div class="mobile_menu_close open_mobile_menu">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="m-brand-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <nav class="mobile-main-navigation  clearfix ul-li">
+                    <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                      <li class="dropdown">
+                        <a href="#">HOME</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="index.html">Home Page 1</a></li>
+                          <li><a href="home_02.html">Home Page 2</a></li>
+                          <li><a href="home_03.html">Home Page 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">ABOUT</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="about.html">About Us</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">PAGES</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="causes.html">Causes</a></li>
+                          <li><a href="causes-details.html">Causes Details</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">BLOG</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="shop.html">Shop page</a></li>
+                          <li><a href="shop_details.html">Shop details page</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">SHOP</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="testimonial.html">Testimonial</a></li>
+                          <li><a href="event.html">event page</a></li>
+                          <li><a href="event_details.html">event details page</a></li>
+                          <li><a href="vlounteer.html">vlounteer page</a></li>
+                          <li><a href="vlounteer_details.html">vlounteer details page</a></li>
+                          <li><a href="shop_cart.html">shop cart</a></li>
+                          <li><a href="faq.html">faq</a></li>
+                          <li><a href="error.html">error</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">PORTFOLIO</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog_details.html">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <!-- End Mobile Menu -->
+          </div>
+          <div class="logo-col">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="logo">
+              </a>
             </div>
           </div>
-          <div class="col-md-7">
-            <nav class="main-manu">
+          <div class="menu-col">
+            <!--Main Menu-->
+            <div class="main-menu-navigation">
+              <nav class="navigation-main-area ul-li">
+                <ul>
+                  <li class="dropdown">
+                    <a href="#">HOME</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="index.html">Home Page 1</a></li>
+                      <li><a href="home_02.html">Home Page 2</a></li>
+                      <li class="dropdown"><a href="home_03.html">Home Page 3</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="index.html">Home Page 1</a></li>
+                          <li><a href="home_02.html">Home Page 2</a></li>
+                          <li><a href="home_03.html">Home Page 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">ABOUT</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="about.html">About Us</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">PAGES</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="causes.html">Causes</a></li>
+                      <li><a href="causes-details.html">Causes Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">BLOG</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="shop.html">Shop page</a></li>
+                      <li><a href="shop_details.html">Shop details page</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">SHOP</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="testimonial.html">Testimonial</a></li>
+                      <li><a href="event.html">event page</a></li>
+                      <li><a href="event_details.html">event details page</a></li>
+                      <li><a href="vlounteer.html">vlounteer page</a></li>
+                      <li><a href="vlounteer_details.html">vlounteer details page</a></li>
+                      <li><a href="shop_cart.html">shop cart</a></li>
+                      <li><a href="checkout.html">checkout</a></li>
+                      <li><a href="faq.html">faq</a></li>
+                      <li><a href="error.html">error</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">PORTFOLIO</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog_details.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-right-col">
+            <div class="header-right">
               <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PAGES</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#user-icon"><i class="fa-regular fa-user"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="side-cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>Cart ($0.00)</span>
+                  </a>
+                </li>
+                <li><a href="#" id="search-manu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a></li>
+                <li><a href="#" id="solid-bar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <i class="fa-solid fa-bars"></i>
+                  </a></li>
               </ul>
-            </nav>
-          </div>
-          <div class="col-md-3">
-            <div class="header-right d-flex justify-content-end">
-              <div class="right-elements">
-                <a href="#"><img src="assets/svg/user.svg" alt=""></a>
-              </div>
-              <div class="right-elements">
-                <a href="#"><img src="assets//svg/icon.svg" alt=""></a>
-                <span>Cart ($0.00)</span>
-              </div>
-              <div class="right-elements">
-                <a href="#"><img src="assets/svg/search.svg" alt=""></a>
-              </div>
-              <div class="right-elements">
-                <a href="#"><img src="assets/svg/bar.svg" alt=""></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </header>
+  <div class="offcanvas offcanvas-end side-scroll" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-body">
+      <div class="sidemenu-wrap">
+        <div class="side-manu">
+          <h2>Uroan</h2>
+          <p><a href="#">Distrak Street 2SK Line, Germany
+              galore@inside-support.com
+              (+125) 2156-2145</a></p>
+        </div>
+        <div class="side-img">
+          <a href="#"> <img src="assets/img/sm1.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm2.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm3.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm4.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm5.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm6.png" alt=""></a>
+        </div>
+        <div class="side-newletter">
+          <h2>Newsletter</h2>
+          <input type="email" placeholder="Enter your e-mail">
+          <button class="uroan-btn">Subscribe Now</button>
+        </div>
+        <div class="side-manu-select">
+          <div>
+            <img src="assets/img/flag.png" alt="">
+            <select>
+              <option value="one">ENGLISH</option>
+              <option value="two">BN</option>
+              <option value="three">FR</option>
+            </select>
+            <select>
+              <option value="one">USD</option>
+              <option value="two">BN</option>
+              <option value="three">FR</option>
+            </select>
+          </div>
+          <div class="account-manu">
+            <a href="#">
+              <i class="fa-regular fa-user"></i>
+              <span>Account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-drawer">
+    <ul>
+      <li class="cart-product">
+        <div class="cart-thumb">
+          <img src="assets/img/product-img2.png" alt="">
+        </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      <li class="cart-product">
+        <div class="cart-thumb">
+          <img src="assets/img/product-img2.png" alt="">
+        </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      <li class="cart-product">
+        <div class="cart-thumb">
+          <img src="assets/img/product-img2.png" alt="">
+        </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+      <li class="cart-product">
+        <div class="cart-thumb">
+          <img src="assets/img/product-img2.png" alt="">
+        </div>
+        <div class="cart-product-details">
+          <a href="#">Weeding Rings</a>
+          <ins>$250.00</ins>
+          <span>Quantity: 1</span>
+        </div>
+        <div class="remove-items">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+      </li>
+    </ul>
+    <div class="total-price">
+      <span>Total:</span>
+      <ins>$750.00</ins>
+    </div>
+    <a href="#" class="uroan-btn">View Cart & Check Out</a>
+  </div>
+  <div class="search-popup">
+    <div class="side-newletter">
+      <input type="text" placeholder="Search here....">
+      <button class="uroan-btn">Search Now</button>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="user-icon" tabindex="-1" aria-labelledby="user-icon" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">password:</label>
+              <input type="password" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" value="">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- End header -->
+
   <!-- breadcrumb section -->
   <section class="breadcrumb">
     <div class="container">
@@ -245,3 +534,13 @@
     </div>
 
   </footer>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/js/gmaps.min.js"></script> -->
+  <script src="assets/js/jquery.nice-number.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

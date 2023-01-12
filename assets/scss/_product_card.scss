@@ -1,0 +1,99 @@
+.product-item {
+  .products-img-area {
+    position: relative;
+    overflow: hidden;
+    .tag {
+      transition: all 0.3s ease-in-out;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      padding: 4px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background-color: $text_white;
+      color: $primary_black;
+      z-index: 5;
+    }
+
+    .product-item-action {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background-color: #000000db;
+      height: 100%;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .product-action-btn {
+        background-color: #ffffff;
+        width: 175px;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+
+        button {
+          position: relative;
+          border: none;
+          background-color: transparent;
+          &::after {
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            top: 8%;
+            content: "";
+            background-color: #e1e1e1;
+            left: 36px;
+          }
+          &:last-child {
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      .tag {
+        background-color: $secondary_color;
+        color: $text_white;
+      }
+      .product-item-action {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+
+  .products-content {
+    a {
+      text-decoration: none;
+      margin-top: 25px;
+      margin-bottom: 8px;
+      color: $secondary_color;
+      font-size: 12px;
+    }
+    h5 {
+      margin-bottom: 9px;
+      a {
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary_black;
+      }
+    }
+    .price {
+      ins {
+        text-decoration: none;
+      }
+    }
+  }
+}

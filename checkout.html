@@ -8,10 +8,28 @@
   <title>Uroan - checkout-page</title>
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="vertical-centered-box">
+      <div class="content">
+        <div class="loader-circle"></div>
+        <div class="loader-line-mask">
+          <div class="loader-line"></div>
+        </div>
+        <img src="assets/img/logo.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Scroll -->
+  <div class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
   <!-- Start header -->
   <header class="default-header-section">
     <div class="container">
@@ -59,41 +77,159 @@
         </div>
       </div>
       <div class="bottom-header">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="logo-img">
-              <img src="assets/img/logo.png" alt="logo">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-2 col-md-4 col-sm-8 logo-col">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="logo">
+              </a>
             </div>
           </div>
-          <div class="col-md-7">
-            <nav class="main-manu">
-              <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PAGES</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-md-3">
-            <div class="header-right d-flex justify-content-end">
-              <div class="right-elements">
-                <a href="#"><img src="assets/svg/user.svg" alt=""></a>
+          <div class="col-lg-8 col-md-8 col-sm-4 menu-col">
+            <!--Main Menu-->
+            <div class="main-menu-navigation">
+              <nav class="navigation-main-area ul-li">
+                <ul>
+                  <li class="dropdown">
+                    <a href="#">Home</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="index.html">Home Page 1</a></li>
+                      <li><a href="home_02.html">Home Page 2</a></li>
+                      <li><a href="home_03.html">Home Page 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">About</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="about.html">About Us</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">Causes</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="causes.html">Causes</a></li>
+                      <li><a href="causes-details.html">Causes Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">Shop</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="shop.html">Shop page</a></li>
+                      <li><a href="shop_details.html">Shop details page</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">Pages</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="testimonial.html">Testimonial</a></li>
+                      <li><a href="event.html">event page</a></li>
+                      <li><a href="event_details.html">event details page</a></li>
+                      <li><a href="vlounteer.html">vlounteer page</a></li>
+                      <li><a href="vlounteer_details.html">vlounteer details page</a></li>
+                      <li><a href="shop_cart.html">shop cart</a></li>
+                      <li><a href="checkout.html">checkout</a></li>
+                      <li><a href="faq.html">faq</a></li>
+                      <li><a href="error.html">error</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#">Blog</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog_details.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Start Mobile Menu -->
+            <div class="mobile_menu position-relative">
+              <div class="mobile_menu_button open_mobile_menu">
+                <i class="fas fa-bars"></i>
               </div>
-              <div class="right-elements">
-                <a href="#"><img src="assets//svg/icon.svg" alt=""></a>
-                <span>Cart ($0.00)</span>
-              </div>
-              <div class="right-elements">
-                <a href="#"><img src="assets/svg/search.svg" alt=""></a>
-              </div>
-              <div class="right-elements">
-                <a href="#"><img src="assets/svg/bar.svg" alt=""></a>
+              <div class="mobile_menu_wrap">
+                <div class="mobile_menu_overlay open_mobile_menu"></div>
+                <div class="mobile_menu_content">
+                  <div class="mobile_menu_close open_mobile_menu">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="m-brand-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <nav class="mobile-main-navigation  clearfix ul-li">
+                    <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                      <li class="dropdown">
+                        <a href="#">Home</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="index.html">Home Page 1</a></li>
+                          <li><a href="home_02.html">Home Page 2</a></li>
+                          <li><a href="home_03.html">Home Page 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">About</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="about.html">About Us</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">Causes</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="causes.html">Causes</a></li>
+                          <li><a href="causes-details.html">Causes Details</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">Shop</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="shop.html">Shop page</a></li>
+                          <li><a href="shop_details.html">Shop details page</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">Pages</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="testimonial.html">Testimonial</a></li>
+                          <li><a href="event.html">event page</a></li>
+                          <li><a href="event_details.html">event details page</a></li>
+                          <li><a href="vlounteer.html">vlounteer page</a></li>
+                          <li><a href="vlounteer_details.html">vlounteer details page</a></li>
+                          <li><a href="shop_cart.html">shop cart</a></li>
+                          <li><a href="checkout.html">checkout</a></li>
+                          <li><a href="faq.html">faq</a></li>
+                          <li><a href="error.html">error</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">Blog</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog_details.html">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
+            <!-- End Mobile Menu -->
+          </div>
+          <div class="col-lg-2 text-end display-none header-right">
+            <a href="#">
+              <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <span>Cart ($0.00)</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -440,3 +576,11 @@
     </div>
 
   </footer>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/js/gmaps.min.js"></script> -->
+  <script src="assets/js/jquery.nice-number.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>

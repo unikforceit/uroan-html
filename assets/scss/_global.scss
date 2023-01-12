@@ -1,0 +1,205 @@
+body {
+  font-family: $primary_font;
+  color: $paragraph_color;
+  line-height: 1.56;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary_black;
+  line-height: 1.2;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+a {
+  color: inherit;
+}
+.container {
+  max-width: 1320px;
+}
+img {
+  max-width: 100%;
+}
+[data-background]{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec-gap {
+  padding: 120px 0;
+  @media screen and (max-width: 991px) {
+    padding: 80px 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 70px 0;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 50px 0;
+  }
+}
+.section-title {
+  span {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: primary_font;
+  }
+  h3 {
+    font-family: $secondary_font;
+    font-size: 48px;
+    font-family: $secondary_font;
+    color: $primary_black;
+    @include media("<=mddevice") {
+      font: {
+        size: 30px;
+      }
+    }
+  }
+  p {
+    max-width: 632px;
+    margin: 0 auto;
+  }
+}
+
+// Preloader
+.preloader {
+  background-color: $primary_black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999999;
+  overflow: hidden;
+  .vertical-centered-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em;
+    }
+    .content {
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      font-size: 0;
+    }
+  }
+}
+
+.preloader * {
+  transition: all 0.3s;
+}
+
+.preloader .loader-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.preloader .loader-line-mask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  overflow: hidden;
+  transform-origin: 60px 60px;
+  mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
+  animation: rotate 1.2s infinite linear;
+  .loader-line {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.preloader #particles-background,
+.preloader #particles-foreground {
+  left: -51%;
+  top: -51%;
+  width: 202%;
+  height: 202%;
+  transform: scale3d(0.5, 0.5, 1);
+}
+
+.preloader #particles-background {
+  background: #2c2d44;
+  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
+}
+
+.preloader lesshat-selector {
+  -lh-property: 0;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader lesshat-selector {
+  -lh-property: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.preloader lesshat-selector {
+  -lh-property: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.preloader [not-existing] {
+  zoom: 1;
+}
