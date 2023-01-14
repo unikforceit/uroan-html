@@ -255,6 +255,12 @@
       font-weight: 400;
       font-size: 18px;
       color: $primary_black;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: $secondary_color;
+        }
+      }
     }
   }
 }
@@ -314,15 +320,15 @@
       .unique-items-content-text {
         background-color: $text_white;
       }
-      @include media ("<=mddevice"){
+      @include media("<=mddevice") {
         margin: 0 auto;
       }
     }
-    @include media ("<=mddevice"){
+    @include media("<=mddevice") {
       padding-left: 0;
     }
-    .unique-items-img{
-      @include media ("<=mddevice"){
+    .unique-items-img {
+      @include media("<=mddevice") {
         margin-bottom: 20px;
       }
     }
@@ -417,6 +423,11 @@
   }
 }
 // footer-about
+.main-footer {
+  @include media("<=mddevice") {
+    padding: 60px 0 40px;
+  }
+}
 .home-v3-footer-about {
   h5 {
     text-transform: uppercase;
@@ -446,9 +457,20 @@
       border: 1px solid #272727;
       border-radius: 50%;
     }
+    @include media("<=mddevice") {
+      & {
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    }
   }
   &::after {
     content: none !important;
+  }
+  @include media("<=mddevice") {
+    & {
+      text-align: center;
+    }
   }
 }
 .home-v3-footer-widget {
@@ -456,6 +478,12 @@
     li {
       list-style: disc;
       color: $secondary_color;
+    }
+    @include media("<=mddevice") {
+      text-align: center;
+      li {
+        list-style: none;
+      }
     }
   }
 }
@@ -500,6 +528,10 @@
 }
 .newsletter-border {
   margin-top: 58px;
+  .heading-para {
+    max-width: 386px;
+    margin-top: 30px;
+  }
 }
 .home-v3-footer-base-link {
   ul {

@@ -74,7 +74,7 @@
           color: $paragraph_color;
         }
 
-        @media screen and (max-width: 570px) {
+        @media screen and (max-width: 575px) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -102,14 +102,14 @@
             }
           }
         }
-        @media screen and (max-width: 570px) {
+        @media screen and (max-width: 575px) {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
         }
       }
-      @media screen and (max-width: 570px) {
+      @media screen and (max-width: 575px) {
         display: flex;
         justify-content: center;
         align-items: center;

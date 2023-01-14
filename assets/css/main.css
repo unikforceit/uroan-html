@@ -382,11 +382,40 @@ img {
 .company-values .our-mission p {
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .company-values .our-mission p {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
 .company-values .our-mission button {
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .company-values .our-mission {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 991px) {
   .company-values .mission-accordion {
+    text-align: center;
+    padding-top: 60px;
+  }
+  .company-values .mission-accordion .accordion {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .company-values .mission-accordion .accordion-heading p {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .company-values .mission-img {
     text-align: center;
   }
 }
@@ -446,6 +475,7 @@ img {
 }
 .team .team-member .team-img-area {
   position: relative;
+  overflow: hidden;
 }
 .team .team-member .team-img-area .team-item-action {
   opacity: 0;
@@ -454,8 +484,11 @@ img {
   background-color: rgba(0, 0, 0, 0.8588235294);
   height: 19%;
   width: 100%;
+  visibility: hidden;
+  transform: translateY();
+  transition: all 0.3s;
 }
-.team .team-member .team-img-area .team-social-icon {
+.team .team-member .team-img-area .team-item-action .team-social-icon {
   position: absolute;
   top: 44%;
   left: 33%;
@@ -467,7 +500,7 @@ img {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.team .team-member .team-img-area .team-social-icon i {
+.team .team-member .team-img-area .team-item-action .team-social-icon i {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 50%;
@@ -476,14 +509,16 @@ img {
   height: 44px;
   font-size: 14px;
   line-height: 14px;
+  transition: all 0.3s;
 }
-.team .team-member .team-img-area .team-social-icon i:hover {
+.team .team-member .team-img-area .team-item-action .team-social-icon i:hover {
   color: #121111;
   background-color: #ffffff;
 }
 .team .team-member:hover .team-item-action {
   opacity: 1;
   transition: all 0.3s ease-in-out;
+  visibility: visible;
 }
 .team .team-member .team-member-name {
   margin-top: 30px;
@@ -572,6 +607,12 @@ img {
 }
 .latest-blog .blog-author-details a:hover {
   color: #f36a07;
+}
+@media (max-width: 768px) {
+  .latest-blog .blog-post-update {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 .checkout-header .login-wrapper {
@@ -3117,7 +3158,7 @@ body {
   font-family: "Prompt", sans-serif;
   color: #74787c;
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 575px) {
   .main-footer .footer-wrapper .footer-widget .footer-about {
     display: flex;
     justify-content: center;
@@ -3143,7 +3184,7 @@ body {
 .main-footer .footer-wrapper .contact-footer ul li a:hover {
   color: #f36a07;
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 575px) {
   .main-footer .footer-wrapper .contact-footer ul {
     display: flex;
     justify-content: center;
@@ -3151,7 +3192,7 @@ body {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 575px) {
   .main-footer .footer-wrapper .contact-footer {
     display: flex;
     justify-content: center;
@@ -3972,6 +4013,12 @@ body {
   font-size: 18px;
   color: #121111;
 }
+.home-v3-category-section .home-v3-category-content span a {
+  text-decoration: none;
+}
+.home-v3-category-section .home-v3-category-content span a:hover {
+  color: #f36a07;
+}
 
 .home-v3-cta-banner .home-v3-cta-banner-content {
   padding: 120px 0;
@@ -4125,6 +4172,12 @@ body {
   transform: rotate(-45deg);
 }
 
+@media (max-width: 991px) {
+  .main-footer {
+    padding: 60px 0 40px;
+  }
+}
+
 .home-v3-footer-about h5 {
   text-transform: uppercase;
   font-weight: 500;
@@ -4155,13 +4208,32 @@ body {
   border: 1px solid #272727;
   border-radius: 50%;
 }
+@media (max-width: 991px) {
+  .home-v3-footer-about .home-v3-footer-wrapper {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
 .home-v3-footer-about::after {
   content: none !important;
+}
+@media (max-width: 991px) {
+  .home-v3-footer-about {
+    text-align: center;
+  }
 }
 
 .home-v3-footer-widget .contact-footer li {
   list-style: disc;
   color: #f36a07;
+}
+@media (max-width: 991px) {
+  .home-v3-footer-widget .contact-footer {
+    text-align: center;
+  }
+  .home-v3-footer-widget .contact-footer li {
+    list-style: none;
+  }
 }
 
 .footer-side-img {
@@ -4202,6 +4274,10 @@ body {
 
 .newsletter-border {
   margin-top: 58px;
+}
+.newsletter-border .heading-para {
+  max-width: 386px;
+  margin-top: 30px;
 }
 
 .home-v3-footer-base-link ul {
