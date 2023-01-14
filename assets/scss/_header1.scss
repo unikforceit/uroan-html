@@ -142,6 +142,9 @@
           background-color: $border_color;
           height: 100%;
           right: -25px;
+          @include media ("<=507px"){
+            right: -17px;
+          }
         }
 
         &:last-child {
@@ -377,7 +380,7 @@
   position: fixed;
   width: 310px;
   overflow-y: scroll;
-  background-color: #464647;
+  background-color: $primary_black;
   padding: 20px 35px 35px 35px;
   box-shadow: 0 3px 5px rgba(100, 100, 100, 0.19);
   transition: all 0.5s ease-in;
@@ -548,7 +551,7 @@
 }
 
 .mobile_menu .mobile_menu_close {
-  color: #d60606;
+  color: $text_white;
   cursor: pointer;
   top: 25px;
   right: 25px;
