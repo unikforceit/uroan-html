@@ -1,7 +1,4 @@
 .banner {
-  background-image: url(/assets/img/banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-left: 70px;
   margin-bottom: 40px;
 
@@ -59,6 +56,28 @@
     button {
       border: 1px solid #e8e8e8;
       padding: 18px;
+    }
+  }
+}
+.shop-list {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .shop-list-dropdown {
+    display: flex;
+    column-gap: 20px;
+    .form-select {
+      max-width: 178px;
+      width: 100%;
+      height: 50px;
+    }
+    .view-system {
+      border: 1px solid #e8e8e8;
+      max-width: 168px;
+      width: 100%;
+      height: 50px;
+      padding: 16px 25px;
     }
   }
 }
