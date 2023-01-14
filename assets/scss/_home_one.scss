@@ -157,6 +157,9 @@
       bottom: 58px;
       right: calc(50% - 215px);
     }
+    @include media("<=461px") {
+      right: 0;
+    }
   }
 }
 // categories
@@ -226,33 +229,30 @@
   }
 }
 // announcement-bar
-.announcement-bar {
-  .announcement-heading {
-    background-color: $primary_black;
-    height: 80px;
-    padding: 27px 0;
-    color: $text_white;
+.announcement-heading {
+  background-color: $primary_black;
+  height: 80px;
+  padding: 27px 0;
+  color: $text_white;
 
-    .announcement-slider {
-      span {
-        margin-left: 80px;
-        position: relative;
-        &::before {
-          width: 40px;
-          height: 1px;
-          background-color: #ffffff;
-          position: absolute;
-          content: "";
-          top: 12px;
-          left: -54px;
-        }
-      }
+  span {
+    margin-left: 80px;
+    position: relative;
+    &::before {
+      width: 40px;
+      height: 1px;
+      background-color: #ffffff;
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: -54px;
     }
   }
   @include media("<=mddevice") {
     margin-bottom: 120px;
   }
 }
+
 // home-page-about
 .home-page-about {
   position: relative;
@@ -399,6 +399,12 @@
           font-size: 60px;
           color: $text_white;
           margin-bottom: 60px;
+          @include media ("<=662px"){
+          font-size: 40px;            
+          }
+          @include media ("<=55px"){
+            font-size: 30px;            
+            }
         }
       }
       .latest-collection-text-items {
@@ -426,6 +432,14 @@
                 top: 50%;
                 transform: translateY(-50%);
                 transition: all 0.7s;
+                @include media ("<=1199px"){
+                  transform: translate(50%, 50%);
+                  left: 23%;
+                }
+                @include media ("<=767px"){
+                  transform: translate(50%, 50%);
+                  left: 14%;
+                }
               }
               &:hover {
                 padding-left: 70px;
@@ -436,6 +450,9 @@
                 }
               }
             }
+            @include media ("<=550px"){
+              font-size: 20px;
+            }
           }
         }
       }
@@ -443,7 +460,13 @@
         text-align: center;
       }
     }
-    
+    @include media ("<=662px"){
+      padding: 60px;
+      margin: 0 30px;
+    }
+  }
+  @include media ("<=550px"){
+    padding: 30px 0;
   }
 }
 // product-collection

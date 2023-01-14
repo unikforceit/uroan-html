@@ -282,16 +282,17 @@ Last change:    00/00/00
         });
       },
       heroslide: function () {
+       jQuery(document).ready(function(){
         var swiperhero = new Swiper(".hero-slide", {
           direction: "vertical",
           effect: "slide",
           slidesPerView: 1,
-          loop: true,
-          autoplay: {
-            delay: 2000,
-            reverseDirection: true,
-            disableOnInteraction: false,
-          },
+          // loop: true,
+          // autoplay: {
+          //   delay: 2000,
+          //   reverseDirection: true,
+          //   disableOnInteraction: false,
+          // },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -301,6 +302,7 @@ Last change:    00/00/00
             prevEl: ".uroan-button-prev",
           },
         });
+       });
       },
       twocategories: function () {
         var swiperfea = new Swiper(".two-categories", {
@@ -344,7 +346,7 @@ Last change:    00/00/00
             },
             520: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             767: {
               slidesPerView: 3,
