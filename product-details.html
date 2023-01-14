@@ -394,7 +394,7 @@
   <section class="product-section sec-gap">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="product-details">
             <div class="product-heading">
               <p class="caption-sub-title">Neaklace</p>
@@ -431,10 +431,10 @@
               </div>
             </div>
             <div class="product-action">
-              <div>
-                <button type="button" id="sub" class="minus">-</button>
-                <input type="number" id="1" value="1" min="1" class='quantity' max="10">
-                <button type="button" id="add" class="plus">+</button>
+              <div id="product-counter">
+                <button id="decrement-button">-</button>
+                <input type="text" id="product-count" value="1">
+                <button id="increment-button">+</button>
               </div>
               <div class="cart-btn">
                 <button class="uroan-btn">Add To Cart <i class="fas fa-bag-shopping"></i></button>
@@ -458,7 +458,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="product-thumb">
             <div class="main-img">
               <img src="assets/img/main-img.png" alt="">
@@ -636,7 +636,7 @@
       </div>
   </section>
   <div class="container">
-    <div class="related-products">
+    <div class="related-products sec-gap">
       <h3>Related-Products</h3>
       <div class="row">
         <div class="col-lg-3 col-sm-6">

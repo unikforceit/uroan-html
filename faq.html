@@ -10,22 +10,23 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <!-- Preloader -->
-  <div class="preloader">
-    <div class="vertical-centered-box">
-      <div class="content">
-        <div class="loader-circle"></div>
-        <div class="loader-line-mask">
-          <div class="loader-line"></div>
+  <!-- <div class="preloader">
+      <div class="vertical-centered-box">
+        <div class="content">
+          <div class="loader-circle"></div>
+          <div class="loader-line-mask">
+            <div class="loader-line"></div>
+          </div>
+          <img src="assets/img/logo.png" alt="">
         </div>
-        <img src="assets/img/logo.png" alt="">
       </div>
-    </div>
-  </div>
+    </div> -->
   <!-- Scroll -->
   <div class="scroll-top">
     <i class="fas fa-arrow-up"></i>
@@ -33,56 +34,127 @@
   <div class="overlay"></div>
   <!-- Start header -->
   <header class="default-header-section">
-    <div class="container">
-      <div class="top-header">
+    <div class="top-header">
+      <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <div class="header-quick-links">
-              <ul>
-                <li><a href="#">+381 2225 25 25 (9AM - 6PM EST)</a></li>
-                <li><a href="#">Free Shipping On All U.S. Orders</a></li>
-                <li><a href="#">Gift Cards</a></li>
-              </ul>
-            </div>
+            <ul class="header-quick-links">
+              <li><a href="#">+381 2225 25 25 (9AM - 6PM EST)</a></li>
+              <li><a href="#">Free Shipping On All U.S. Orders</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
           </div>
           <div class="col-md-5">
-            <div class="drop-manu">
-              <div class="top-header-right">
-                <div class="language">
-                  <select>
-                    <option value="one">EN</option>
-                    <option value="two">BN</option>
-                    <option value="three">FR</option>
-                  </select>
-                </div>
-                <div class="currency">
-                  <select>
-                    <option value="one">USD</option>
-                    <option value="two">BDT</option>
-                    <option value="three">EUR</option>
-                  </select>
-                </div>
-                <div class="store">
-                  <a href="#">Strore</a>
-                </div>
-                <div class="Subscribe">
-                  <a href="#">Subscribe</a>
-                </div>
-              </div>
-            </div>
+            <ul class="header-quick-links justify-content-end">
+              <li class="language">
+                <select>
+                  <option value="one">EN</option>
+                  <option value="two">BN</option>
+                  <option value="three">FR</option>
+                </select>
+              </li>
+              <li class="currency">
+                <select>
+                  <option value="one">USD</option>
+                  <option value="two">BDT</option>
+                  <option value="three">EUR</option>
+                </select>
+              </li>
+              <li class="store">
+                <a href="#">Strore</a>
+              </li>
+              <li class="Subscribe">
+                <a href="#">Subscribe</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="bottom-header">
-        <div class="row justify-content-between">
-          <div class="col-lg-2 col-md-4 col-sm-8 logo-col">
+    </div>
+    <div class="bottom-header">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="mobile-menu-col">
+            <!-- Start Mobile Menu -->
+            <div class="mobile_menu">
+              <div class="mobile_menu_button open_mobile_menu">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="mobile_menu_wrap">
+                <div class="mobile_menu_overlay open_mobile_menu"></div>
+                <div class="mobile_menu_content">
+                  <div class="mobile_menu_close open_mobile_menu">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="m-brand-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <nav class="mobile-main-navigation  clearfix ul-li">
+                    <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                      <li class="dropdown">
+                        <a href="#">HOME</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="index.html">Home Page 1</a></li>
+                          <li><a href="home_02.html">Home Page 2</a></li>
+                          <li><a href="home_03.html">Home Page 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">ABOUT</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="about.html">About Us</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">PAGES</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="causes.html">Causes</a></li>
+                          <li><a href="causes-details.html">Causes Details</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">BLOG</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="shop.html">Shop page</a></li>
+                          <li><a href="shop_details.html">Shop details page</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">SHOP</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="testimonial.html">Testimonial</a></li>
+                          <li><a href="event.html">event page</a></li>
+                          <li><a href="event_details.html">event details page</a></li>
+                          <li><a href="vlounteer.html">vlounteer page</a></li>
+                          <li><a href="vlounteer_details.html">vlounteer details page</a></li>
+                          <li><a href="shop_cart.html">shop cart</a></li>
+                          <li><a href="faq.html">faq</a></li>
+                          <li><a href="error.html">error</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#">PORTFOLIO</a>
+                        <ul class="dropdown-menu clearfix">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog_details.html">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <!-- End Mobile Menu -->
+          </div>
+          <div class="logo-col">
             <div class="logo">
               <a href="index.html">
                 <img src="assets/img/logo.png" alt="logo">
               </a>
             </div>
           </div>
-          <div class="col-lg-7 col-md-8 col-sm-4 menu-col">
+          <div class="menu-col">
             <!--Main Menu-->
             <div class="main-menu-navigation">
               <nav class="navigation-main-area ul-li">
@@ -146,84 +218,12 @@
                 </ul>
               </nav>
             </div>
-            <!-- Start Mobile Menu -->
-            <div class="mobile_menu position-relative">
-              <div class="mobile_menu_button open_mobile_menu">
-                <i class="fas fa-bars"></i>
-              </div>
-              <div class="mobile_menu_wrap">
-                <div class="mobile_menu_overlay open_mobile_menu"></div>
-                <div class="mobile_menu_content">
-                  <div class="mobile_menu_close open_mobile_menu">
-                    <i class="fas fa-times"></i>
-                  </div>
-                  <div class="m-brand-logo">
-                    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
-                  </div>
-                  <nav class="mobile-main-navigation  clearfix ul-li">
-                    <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
-                      <li class="dropdown">
-                        <a href="#">HOME</a>
-                        <ul class="dropdown-menu clearfix">
-                          <li><a href="index.html">Home Page 1</a></li>
-                          <li><a href="home_02.html">Home Page 2</a></li>
-                          <li><a href="home_03.html">Home Page 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">ABOUT</a>
-                        <ul class="dropdown-menu clearfix">
-                          <li><a href="about.html">About Us</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">PAGES</a>
-                        <ul class="dropdown-menu clearfix">
-                          <li><a href="causes.html">Causes</a></li>
-                          <li><a href="causes-details.html">Causes Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">BLOG</a>
-                        <ul class="dropdown-menu clearfix">
-                          <li><a href="shop.html">Shop page</a></li>
-                          <li><a href="shop_details.html">Shop details page</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">SHOP</a>
-                        <ul class="dropdown-menu clearfix">
-                          <li><a href="testimonial.html">Testimonial</a></li>
-                          <li><a href="event.html">event page</a></li>
-                          <li><a href="event_details.html">event details page</a></li>
-                          <li><a href="vlounteer.html">vlounteer page</a></li>
-                          <li><a href="vlounteer_details.html">vlounteer details page</a></li>
-                          <li><a href="shop_cart.html">shop cart</a></li>
-                          <li><a href="checkout.html">checkout</a></li>
-                          <li><a href="faq.html">faq</a></li>
-                          <li><a href="error.html">error</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#">PORTFOLIO</a>
-                        <ul class="dropdown-menu clearfix">
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="blog_details.html">Blog Details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <!-- End Mobile Menu -->
           </div>
-          <div class="col-lg-3">
+          <div class="header-right-col">
             <div class="header-right">
               <ul>
                 <li>
-                  <a href="#"><i class="fa-regular fa-user"></i>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#user-icon"><i class="fa-regular fa-user"></i>
                   </a>
                 </li>
                 <li>
@@ -235,7 +235,7 @@
                 <li><a href="#" id="search-manu">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </a></li>
-                <li><a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                <li><a href="#" id="solid-bar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                     <i class="fa-solid fa-bars"></i>
                   </a></li>
@@ -244,6 +244,7 @@
           </div>
         </div>
       </div>
+    </div>
   </header>
   <div class="offcanvas offcanvas-end side-scroll" tabindex="-1" id="offcanvasRight"
     aria-labelledby="offcanvasRightLabel">
@@ -256,12 +257,12 @@
               (+125) 2156-2145</a></p>
         </div>
         <div class="side-img">
-          <img src="assets/img/sm1.png" alt="">
-          <img src="assets/img/sm2.png" alt="">
-          <img src="assets/img/sm3.png" alt="">
-          <img src="assets/img/sm4.png" alt="">
-          <img src="assets/img/sm5.png" alt="">
-          <img src="assets/img/sm6.png" alt="">
+          <a href="#"> <img src="assets/img/sm1.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm2.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm3.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm4.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm5.png" alt=""></a>
+          <a href="#"><img src="assets/img/sm6.png" alt=""></a>
         </div>
         <div class="side-newletter">
           <h2>Newsletter</h2>
@@ -346,7 +347,6 @@
           <a href="#"><i class="fas fa-times"></i></a>
         </div>
       </li>
-
     </ul>
     <div class="total-price">
       <span>Total:</span>
@@ -360,8 +360,36 @@
       <button class="uroan-btn">Search Now</button>
     </div>
   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="user-icon" tabindex="-1" aria-labelledby="user-icon" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Name</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">password:</label>
+              <input type="password" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" value="">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End header -->
   <!-- breadcrumb section -->
-  <section class="breadcrumb">
+  <section class="breadcrumb" data-background="assets/img/bgimg.png">
     <div class="container">
       <h6>Home / FAQ</h6>
     </div>
@@ -371,7 +399,7 @@
   <section class="accordion-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-lg-8 col-md-6">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -515,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6">
           <div class="faq-form">
             <input type="email" placeholder="Email Address">
             <textarea name="" id="" placeholder="Type Message"></textarea>
@@ -546,7 +574,7 @@
       <div class="container">
         <div class="footer-widget">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-7 col-sm-8">
               <div class="footer-about">
                 <div class="footer-logo">
                   <a href="#">
@@ -558,16 +586,16 @@
                   dictum augue</p>
                 <div class="social-icon">
                   <ul>
-                    <li><a target="_blank" href="#"><img src="assets/svg/facebook.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/svg/twitter.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/svg/instagram.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/svg/you_tube.svg" alt=""></a>
+                    <li><a href="#"><img src="assets/img/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/you-tube.png" alt=""></a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-md-5 col-sm-4">
               <div class="contact-footer">
                 <p class="footer-heading">Quick Links</p>
                 <ul>
@@ -579,7 +607,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-md-4 col-sm-4">
               <div class="contact-footer">
                 <p class="footer-heading">Company</p>
                 <ul>
@@ -591,19 +619,19 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-md-4 col-sm-4">
               <div class="contact-footer">
                 <p class="footer-heading">Supports</p>
                 <ul>
                   <li><a href="#">FAQ</a></li>
                   <li><a href="#">Size Guide</a></li>
-                  <li><a href="#">Delivery & Returns</a></li>
+                  <li><a href="#">Delivery &amp; Returns</a></li>
                   <li><a href="#">Warranty</a></li>
                   <li><a href="#">Contact Us</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-md-4 col-sm-4">
               <div class="contact-footer">
                 <p class="footer-heading">Contact</p>
                 <ul>
@@ -636,17 +664,14 @@
         </div>
       </div>
     </div>
-
   </footer>
-
-
-
-
   <!-- end-footer-section -->
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="assets/js/gmaps.min.js"></script> -->
+  <!-- Swiper JS -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/jquery.nice-number.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/script.js"></script>
