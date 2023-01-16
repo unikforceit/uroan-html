@@ -3842,7 +3842,8 @@ body {
   flex-wrap: wrap;
 }
 .home-two-footer .newsletter-border .home-newsletter-wrappper .newsletter-form-btn input {
-  min-width: 415px;
+  max-width: 415px;
+  width: 100%;
   height: 50px;
   padding: 14px 25px;
 }

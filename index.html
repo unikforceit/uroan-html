@@ -157,7 +157,7 @@
           <div class="menu-col">
             <!--Main Menu-->
             <div class="main-menu-navigation">
-              <nav class="navigation-main-area ul-li"> 
+              <nav class="navigation-main-area ul-li">
                 <ul>
                   <li class="dropdown">
                     <a href="#">HOME</a>
@@ -232,7 +232,7 @@
                     <span>Cart ($0.00)</span>
                   </a>
                 </li>
-                <li><a href="#" id="search-manu">
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </a></li>
                 <li><a href="#" id="solid-bar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -246,8 +246,7 @@
       </div>
     </div>
   </header>
-  <div class="offcanvas offcanvas-end side-scroll" tabindex="-1" id="offcanvasRight"
-    aria-labelledby="offcanvasRight">
+  <div class="offcanvas offcanvas-end side-scroll" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRight">
     <div class="offcanvas-body">
       <div class="sidemenu-wrap">
         <div class="side-manu">
@@ -354,10 +353,21 @@
     </div>
     <a href="#" class="uroan-btn">View Cart & Check Out</a>
   </div>
-  <div class="search-popup">
-    <div class="side-newletter">
-      <input type="text" placeholder="Search here....">
-      <button class="uroan-btn">Search Now</button>
+  <!-- serach -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Modal -->
@@ -424,7 +434,7 @@
                     <h6><a href="#">Deltanor Fory Ring
                         in 24k Diamond</a></h6>
                     <button><i class="fa-regular fa-heart"></i></button>
-                        <button><i class="fa-regular fa-plus"></i></button>
+                    <button><i class="fa-regular fa-plus"></i></button>
                   </div>
                 </div>
               </div>
@@ -461,7 +471,7 @@
                   <h6><a href="#">Deltanor Fory Ring
                       in 24k Diamond</a></h6>
                   <button><i class="fa-regular fa-heart"></i></button>
-                      <button><i class="fa-regular fa-plus"></i></button>
+                  <button><i class="fa-regular fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -496,8 +506,8 @@
                 <div class="product-content">
                   <h6><a href="#">Deltanor Fory Ring
                       in 24k Diamond</a></h6>
-                      <button><i class="fa-regular fa-heart"></i></button>
-                      <button><i class="fa-regular fa-plus"></i></button>
+                  <button><i class="fa-regular fa-heart"></i></button>
+                  <button><i class="fa-regular fa-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -532,8 +542,8 @@
                 <div class="product-content">
                   <h6><a href="#">Deltanor Fory Ring
                       in 24k Diamond</a></h6>
-                      <button><i class="fa-regular fa-heart"></i></button>
-                      <button><i class="fa-regular fa-plus"></i></button>
+                  <button><i class="fa-regular fa-heart"></i></button>
+                  <button><i class="fa-regular fa-plus"></i></button>
                 </div>
               </div>
             </div>
