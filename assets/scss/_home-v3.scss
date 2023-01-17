@@ -116,10 +116,11 @@
     justify-content: space-between;
     ul {
       button {
-        color: $primary_black;
+          color: $primary_black;
         &.active {
           color: $secondary_color;
           text-decoration: underline;
+        
         }
       }
     }
