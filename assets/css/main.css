@@ -1890,14 +1890,12 @@ body {
        column-gap: 20px;
 }
 .shop-list .shop-list-dropdown .form-select {
-  max-width: 178px;
-  width: 100%;
+  min-width: 178px;
   height: 50px;
 }
 .shop-list .shop-list-dropdown .view-system {
   border: 1px solid #e8e8e8;
-  max-width: 168px;
-  width: 100%;
+  min-width: 168px;
   height: 50px;
   padding: 16px 25px;
 }
@@ -3087,23 +3085,49 @@ body {
   }
 }
 
-.product-color {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
+.color-fliter ul > li {
   font-weight: 300;
   color: #121111;
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 32px;
 }
-.product-color .form-check input {
-  box-shadow: none;
+.color-fliter ul > li::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #EB9A3C;
+  left: 0;
+  border-radius: 50%;
 }
-.product-color a {
-  text-decoration: none;
+.color-fliter ul > li span {
+  position: absolute;
+  right: 0;
 }
-.product-color a:hover {
-  color: #121111;
+.color-fliter ul > li:nth-child(2)::before {
+  background-color: #FAA9D9;
+}
+.color-fliter ul > li:nth-child(3)::before {
+  background-color: #99C88D;
+}
+.color-fliter ul > li:nth-child(4)::before {
+  background-color: #A9BFFA;
+}
+.color-fliter ul > li:nth-child(5)::before {
+  background-color: #EEEACA;
+}
+
+.product-brands li {
+  position: relative;
+  margin-bottom: 9px;
+}
+.product-brands li span {
+  position: absolute;
+  right: 0;
+}
+.product-brands li input {
+  margin-right: 7px;
 }
 
 .product-gap {
@@ -3118,33 +3142,6 @@ body {
   display: inherit;
 }
 
-.dot {
-  height: 20px;
-  width: 20px;
-  background-color: #eb9a3c;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dot input {
-  display: none;
-}
-
-.pink {
-  background-color: #faa9d9;
-}
-
-.green {
-  background-color: #99c88d;
-}
-
-.blue {
-  background-color: #a9bffa;
-}
-
-.grey {
-  background-color: #eeeaca;
-}
-
 .related-products .notices-wrapper {
   display: flex;
   justify-content: space-between;
@@ -3152,7 +3149,8 @@ body {
   margin-bottom: 40px;
 }
 .related-products .notices-wrapper .form-select {
-  width: 178px;
+  max-width: 178px;
+  width: 100%;
   height: 50px;
   border-radius: inherit;
   box-shadow: none;
