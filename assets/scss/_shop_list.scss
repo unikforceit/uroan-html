@@ -64,18 +64,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   .shop-list-dropdown {
     display: flex;
     column-gap: 20px;
     .form-select {
       min-width: 178px;
       height: 50px;
+      @include media("<=496px") {
+        width: 100%;
+        margin-top: 20px;
+      }
     }
     .view-system {
       border: 1px solid #e8e8e8;
       min-width: 168px;
       height: 50px;
       padding: 16px 25px;
+      @include media("<=496px") {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    @include media("<=496px") {
+      flex-wrap: wrap;
     }
   }
 }
