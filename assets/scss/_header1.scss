@@ -142,7 +142,7 @@
           background-color: $border_color;
           height: 100%;
           right: -25px;
-          @include media ("<=507px"){
+          @include media("<=507px") {
             right: -17px;
           }
         }

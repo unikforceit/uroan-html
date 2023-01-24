@@ -335,8 +335,8 @@ Last change:    00/00/00
       },
       indexinstagram: function () {
         var swiperinsta = new Swiper(".index-two-instagram", {
-          slidesPerView: 4,
-          spaceBetween: 60,
+          slidesPerView: 5,
+          spaceBetween: 20,
           centeredSlides: true,
           loop: true,
           autoplay: true,
@@ -353,8 +353,8 @@ Last change:    00/00/00
               spaceBetween: 20,
             },
             1024: {
-              slidesPerView: 4,
-              spaceBetween: 30,
+              slidesPerView: 5,
+              spaceBetween: 20,
             },
           },
         });

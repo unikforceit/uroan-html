@@ -531,6 +531,9 @@
   .heading-para {
     max-width: 386px;
     margin-top: 30px;
+    @include media ("<=1390px"){
+      margin: 30px auto;    
+     }
   }
 }
 .home-v3-footer-base-link {
