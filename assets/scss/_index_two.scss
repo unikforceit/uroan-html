@@ -39,6 +39,37 @@
       content: none;
     }
   }
+  .navigation-main-area .dropdown{
+    >a{
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "\f078";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 700;
+        right: -20px;
+       }
+    }
+    .dropdown-menu{
+      .dropdown{
+        a{
+          &::after{
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  @include media ("<=1366px"){
+    .navigation-main-area ul {
+        column-gap: 30px;
+        }
+  }
+  @include media ("<=1052px"){
+   .header-right ul{
+      column-gap: 40px;
+    }
+  }
 }
 // index-two-hero-banner
 .index-two-hero-banner {
@@ -132,6 +163,13 @@
       p {
         font-size: 14px;
       }
+      @include media ("<=767px"){
+        text-align: center;
+      }
+    }
+    @include media ("<=767px"){
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
@@ -339,7 +377,9 @@
     h3 {
       margin: 0;
     }
-    button {
+    a {
+     
+      text-decoration: none;
       font-weight: 500;
       padding: 13px 34px;
       background-color: transparent;
@@ -459,6 +499,9 @@
       position: relative;
       p {
         width: auto;
+        @include media ("<=768px"){
+         margin: 0 auto;
+        }
       }
       &::after {
         position: absolute;
@@ -481,9 +524,20 @@
               }
             }
           }
+          @include media ("<=768px"){
+           justify-content: center;
+          }
         }
       }
+<<<<<<< HEAD
     }
+=======
+      @include media ("<=768px"){
+        text-align: center;
+        padding-top: 20px;
+      }
+   }
+>>>>>>> 7364ffd085e78bc3fe15d4246986400f0e634225
   }
   .newsletter-border {
     border-top: 1px solid #242424;
@@ -522,6 +576,9 @@
             width: 30%;
             margin: 0 auto;
           }
+          @include media ("<=371px"){
+            padding: 0;
+          }
         }
       }
       @include media("<=1390px") {
@@ -544,4 +601,8 @@
       }
     }
   }
+  .footer-widget{
+    padding-bottom: 0 !important;
+  }
 }
+

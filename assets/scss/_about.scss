@@ -181,12 +181,12 @@
           }
         }
       }
-    }
-    &:hover {
-      .team-item-action {
-        opacity: 1;
-        transition: all 0.3s ease-in-out;
-        visibility: visible;
+      &:hover {
+        .team-item-action {
+          opacity: 1;
+          transition: all 0.3s ease-in-out;
+          visibility: visible;
+        }
       }
     }
     .team-member-name {
