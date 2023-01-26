@@ -921,6 +921,7 @@ img {
   -moz-column-gap: 20px;
        column-gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .product-action .cart-btn button {
   max-width: 180px;
@@ -1872,10 +1873,34 @@ body {
 }
 .shop-product-content .cart-btn button {
   background-color: transparent;
+  padding: 14px 33px;
+  position: relative;
+}
+.shop-product-content .cart-btn button::before {
+  position: absolute;
+  content: "\f290";
+  right: 12px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
 }
 .shop-product-content .cart-icon button {
   border: 1px solid #e8e8e8;
   padding: 18px;
+}
+@media (max-width: 1172px) {
+  .shop-product-content .cart-icon {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .shop-product-content .cart-icon {
+    margin-top: 0;
+  }
+}
+@media (max-width: 601px) {
+  .shop-product-content .cart-icon {
+    margin-top: 20px;
+  }
 }
 
 .shop-list {
@@ -1915,6 +1940,11 @@ body {
 @media (max-width: 496px) {
   .shop-list .shop-list-dropdown {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 690px) {
+  .shop-list .shop-list-dropdown {
+    margin-top: 20px;
   }
 }
 
@@ -3097,11 +3127,6 @@ body {
 .blog-details .widget-img-box li a:hover img {
   transform: scale(1.1);
 }
-@media (max-width: 991px) {
-  .blog-details .container {
-    padding: 0 30px;
-  }
-}
 
 .color-fliter ul > li {
   font-weight: 300;
@@ -3183,6 +3208,17 @@ body {
   justify-content: space-between;
 }
 
+.table-gap {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding-left: 40px;
+  flex-wrap: wrap;
+}
+
+.wishlist {
+  width: 100%;
+}
+
 .social-icon ul {
   display: flex;
   -moz-column-gap: 10px;
@@ -3261,7 +3297,7 @@ body {
   font-family: "Prompt", sans-serif;
   color: #74787c;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .main-footer .footer-wrapper .footer-widget .footer-about {
     display: flex;
     justify-content: center;
@@ -3287,7 +3323,7 @@ body {
 .main-footer .footer-wrapper .contact-footer ul li a:hover {
   color: #f36a07;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .main-footer .footer-wrapper .contact-footer ul {
     display: flex;
     justify-content: center;
@@ -3295,7 +3331,7 @@ body {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .main-footer .footer-wrapper .contact-footer {
     display: flex;
     justify-content: center;

@@ -105,8 +105,8 @@
         display: flex;
         column-gap: 30px;
         flex-wrap: wrap;
-        .author-img{
-            flex: 0 0 25%;
+        .author-img {
+          flex: 0 0 25%;
         }
         .author-text {
           flex: 0 0 65%;
@@ -129,7 +129,7 @@
             }
           }
         }
-        @include media("<=tablet"){
+        @include media("<=tablet") {
           column-gap: 20px;
         }
       }
@@ -185,12 +185,12 @@
         }
         .comment-author {
           flex: 0 0 12%;
-          img{
+          img {
             flex: 0 0 100px;
           }
         }
       }
-         }
+    }
   }
   .customer-review {
     margin-top: 60px;
@@ -230,7 +230,7 @@
         }
       }
     }
-    }
+  }
   .sidebar {
     padding-left: 35px;
 
@@ -282,14 +282,14 @@
       margin-bottom: 15px;
       .widget-img {
         flex: 0 0 90px;
-        a{
+        a {
           display: block;
           overflow: hidden;
-          img{
+          img {
             transition: all 0.3s ease-in-out;
           }
-          &:hover{
-            img{
+          &:hover {
+            img {
               transform: scale(1.1);
             }
           }
@@ -309,10 +309,10 @@
         color: $primary_black;
       }
     }
-    @include media ("<992px"){
+    @include media("<992px") {
       padding: 50px 0 0;
     }
-    }
+  }
   .widget-button {
     margin-top: 51px;
     display: flex;
@@ -339,26 +339,24 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    li{
-      a{
+    li {
+      a {
         display: block;
         overflow: hidden;
-        img{
+        img {
           transition: all 0.3s ease-in-out;
-          
         }
-        &:hover{
-         img{
-          transform: scale(1.1);
-          } 
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
         }
       }
-    }    
-    
-  }
-  .container{
-    @include media ("<992px"){
-      padding: 0 30px;
     }
   }
+  // .container{
+  //   @include media ("<=992px"){
+  //     padding: 0 30px;
+  //   }
+  // }
 }

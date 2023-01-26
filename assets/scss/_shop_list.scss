@@ -50,12 +50,30 @@
   .cart-btn {
     button {
       background-color: transparent;
+      padding: 14px 33px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "\f290";
+        right: 12px;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 700;
+      }
     }
   }
   .cart-icon {
     button {
       border: 1px solid #e8e8e8;
       padding: 18px;
+    }
+    @include media("<=1172px") {
+      margin-top: 20px;
+    }
+    @include media("<=mddevice") {
+      margin-top: 0;
+    }
+    @include media("<=601px") {
+      margin-top: 20px;
     }
   }
 }
@@ -71,6 +89,7 @@
     .form-select {
       min-width: 178px;
       height: 50px;
+
       @include media("<=496px") {
         width: 100%;
         margin-top: 20px;
@@ -88,6 +107,9 @@
     }
     @include media("<=496px") {
       flex-wrap: wrap;
+    }
+    @include media("<=690px") {
+      margin-top: 20px;
     }
   }
 }
