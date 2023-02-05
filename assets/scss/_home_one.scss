@@ -325,10 +325,10 @@
       font-size: 20px;
       color: $primary_black;
     }
-    .uroan-button-next{
+    .uroan-button-next {
       transform: rotate(180deg);
     }
-    .uroan-button-prev{
+    .uroan-button-prev {
       transform: rotate(180deg);
     }
   }
@@ -399,12 +399,12 @@
           font-size: 60px;
           color: $text_white;
           margin-bottom: 60px;
-          @include media ("<=662px"){
-          font-size: 40px;            
+          @include media("<=662px") {
+            font-size: 40px;
           }
-          @include media ("<=55px"){
-            font-size: 30px;            
-            }
+          @include media("<=55px") {
+            font-size: 30px;
+          }
         }
       }
       .latest-collection-text-items {
@@ -432,11 +432,11 @@
                 top: 50%;
                 transform: translateY(-50%);
                 transition: all 0.7s;
-                @include media ("<=1199px"){
+                @include media("<=1199px") {
                   transform: translate(50%, 50%);
                   left: 23%;
                 }
-                @include media ("<=767px"){
+                @include media("<=767px") {
                   transform: translate(50%, 50%);
                   left: 14%;
                 }
@@ -450,7 +450,7 @@
                 }
               }
             }
-            @include media ("<=550px"){
+            @include media("<=550px") {
               font-size: 20px;
             }
           }
@@ -460,12 +460,12 @@
         text-align: center;
       }
     }
-    @include media ("<=662px"){
+    @include media("<=662px") {
       padding: 60px;
       margin: 0 30px;
     }
   }
-  @include media ("<=550px"){
+  @include media("<=550px") {
     padding: 30px 0;
   }
 }
@@ -547,7 +547,12 @@
         border: 1px solid #fff;
         border-radius: 50%;
         position: relative;
+        background-color: #fff;
       }
+      .swiper-pagination-bullet-active {
+        background-color: lightskyblue;
+      }
+
       @include media("<=tablet") {
         text-align: center;
       }

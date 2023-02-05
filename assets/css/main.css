@@ -1728,6 +1728,10 @@ body {
   border: 1px solid #fff;
   border-radius: 50%;
   position: relative;
+  background-color: #fff;
+}
+.testimonial .testimonial-wrapper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: lightskyblue;
 }
 @media (max-width: 768px) {
   .testimonial .testimonial-wrapper .swiper-pagination {
@@ -3427,8 +3431,15 @@ body {
   font-weight: 700;
   right: -20px;
 }
+.header-v2 .navigation-main-area .dropdown > a:last-child::after {
+  content: none;
+}
 .header-v2 .navigation-main-area .dropdown .dropdown-menu .dropdown a::after {
   content: none;
+}
+.header-v2 .navigation-main-area ul {
+  -moz-column-gap: 38px;
+       column-gap: 38px;
 }
 @media (max-width: 1366px) {
   .header-v2 .navigation-main-area ul {
