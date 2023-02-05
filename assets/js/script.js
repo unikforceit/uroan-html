@@ -310,12 +310,12 @@ Last change:    00/00/00
           spaceBetween: 10,
           loop: true,
           autoplay: {
-            delay: 2000,
+            delay: 1000,
             reverseDirection: true,
             disableOnInteraction: false,
           },
           breakpoints: {
-            360: {
+            320: {
               slidesPerView: 2,
             },
             520: {
