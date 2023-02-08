@@ -282,27 +282,27 @@ Last change:    00/00/00
         });
       },
       heroslide: function () {
-       jQuery(document).ready(function(){
-        var swiperhero = new Swiper(".hero-slide", {
-          direction: "vertical",
-          effect: "slide",
-          slidesPerView: 1,
-          // loop: true,
-          // autoplay: {
-          //   delay: 2000,
-          //   reverseDirection: true,
-          //   disableOnInteraction: false,
-          // },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".uroan-button-next",
-            prevEl: ".uroan-button-prev",
-          },
+        jQuery(document).ready(function () {
+          var swiperhero = new Swiper(".hero-slide", {
+            direction: "vertical",
+            effect: "slide",
+            slidesPerView: 1,
+            // loop: true,
+            // autoplay: {
+            //   delay: 2000,
+            //   reverseDirection: true,
+            //   disableOnInteraction: false,
+            // },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".uroan-button-next",
+              prevEl: ".uroan-button-prev",
+            },
+          });
         });
-       });
       },
       twocategories: function () {
         var swiperfea = new Swiper(".two-categories", {

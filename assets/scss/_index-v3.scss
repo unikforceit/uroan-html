@@ -71,6 +71,7 @@
 // home-v3-hero-banner
 .home-v3-hero-banner-wrapper {
   padding: 339px 215px 161px 300px;
+  height: 810px;
   h2 {
     margin-bottom: 25px;
     font-size: 72px;
@@ -116,11 +117,10 @@
     justify-content: space-between;
     ul {
       button {
-          color: $primary_black;
+        color: $primary_black;
         &.active {
           color: $secondary_color;
           text-decoration: underline;
-        
         }
       }
     }
@@ -222,6 +222,7 @@
   }
   .home-v3-category-img {
     max-width: 200px;
+    margin: 0 auto;
     height: 200px;
     border-radius: 50%;
     background-color: $third_color;
@@ -532,9 +533,9 @@
   .heading-para {
     max-width: 386px;
     margin-top: 30px;
-    @include media ("<=1390px"){
-      margin: 30px auto;    
-     }
+    @include media("<=1390px") {
+      margin: 30px auto;
+    }
   }
 }
 .home-v3-footer-base-link {

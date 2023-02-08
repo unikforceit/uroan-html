@@ -150,8 +150,7 @@ img {
   transform-origin: 60px 60px;
   -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
           mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
-  -webkit-animation: rotate 1.2s infinite linear;
-          animation: rotate 1.2s infinite linear;
+  animation: rotate 1.2s infinite linear;
 }
 .preloader .loader-line-mask .loader-line {
   width: 120px;
@@ -177,15 +176,6 @@ img {
 .preloader lesshat-selector {
   -lh-property: 0;
 }
-
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -198,15 +188,6 @@ img {
   -lh-property: 0;
 }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.25;
-  }
-}
-
 @keyframes fade {
   0% {
     opacity: 1;
@@ -217,15 +198,6 @@ img {
 }
 .preloader lesshat-selector {
   -lh-property: 0;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fade-in {
@@ -2201,14 +2173,10 @@ body {
   width: 100%;
   z-index: 20;
   position: fixed;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
   transition: 0.3s all ease-in-out;
   background-color: #121111;
   box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
@@ -2518,20 +2486,7 @@ body {
   z-index: 10;
 }
 .scroll-top i {
-  -webkit-animation: bounce 2s ease infinite;
-          animation: bounce 2s ease infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%, 10%, 100%, 20%, 50%, 80% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-15px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+  animation: bounce 2s ease infinite;
 }
 
 @keyframes bounce {
@@ -4109,6 +4064,7 @@ body {
 
 .home-v3-hero-banner-wrapper {
   padding: 339px 215px 161px 300px;
+  height: 810px;
 }
 .home-v3-hero-banner-wrapper h2 {
   margin-bottom: 25px;
@@ -4253,6 +4209,7 @@ body {
 }
 .home-v3-category-section .home-v3-category-img {
   max-width: 200px;
+  margin: 0 auto;
   height: 200px;
   border-radius: 50%;
   background-color: #f6f6f6;
